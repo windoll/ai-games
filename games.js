@@ -15,7 +15,7 @@
 //   scoreDetail 每一項加分的理由與數字
 //   buzz      熱度數據摘要（Threads、PTT、Google 搜尋趨勢的實際數字與日期）
 //   tw        true = 台灣媒體報導 2 家以上（網站只收 tw: true）
-window.LAST_UPDATED = "2026-10-19";
+window.LAST_UPDATED = "2026-10-20";
 window.GAMES = [
   {
     id: "taipei-gta",
@@ -187,17 +187,25 @@ window.GAMES = [
     added: "2026-10-19",
     tw: true,
     score: 10,
-    buzz: "PTT C_Chat 系列文 85／82／42 推，八卦板 4 篇問卦（10/13–10/18）；Threads 原文在韓國 1.8K 讚、47.5 萬瀏覽；Google 搜尋趨勢台灣 10/15 起明顯上升。",
+    buzz: "Threads 台灣網友 @linqiaokai 10.3K 讚、9.9K 分享、46.3 萬瀏覽（約 10/16）；PTT C_Chat 系列文 85／82／42 推，八卦板 4 篇問卦（10/13–10/18）；Google 搜尋趨勢台灣 10/15 起明顯上升。",
     scoreDetail: [
       "台灣媒體 5 家（ETtoday、中時、NOWnews、數位時代、遠見）+5",
       "近 7 天有新報導或討論：ETtoday 10/18 報導、PTT 10/18 仍有討論 +2",
-      "高互動貼文：Threads 原文 1.8K 讚（10/5） +2",
+      "高互動貼文：Threads @linqiaokai 10.3K 讚、9.9K 分享（約 10/16）+2",
       "Google 搜尋趨勢 10/15 起明顯上升 +1"
     ],
     threads: {
-      totalShares: 2726,
-      checked: "2026-10-19",
+      totalShares: 12600,
+      checked: "2026-10-20",
       posts: [
+        {
+          account: "@linqiaokai",
+          url: "https://www.threads.com/@linqiaokai/post/DeezgQvEhCV",
+          date: "約 10/16",
+          shares: 9900,
+          likes: 10300,
+          views: "46.3 萬"
+        },
         {
           account: "@jins__earth（作者，韓文）",
           url: "https://www.threads.com/@jins__earth/post/DeG1MpWm4Nd",
@@ -213,14 +221,6 @@ window.GAMES = [
           shares: 1300,
           likes: 2400,
           views: "9.16 萬"
-        },
-        {
-          account: "@bonnie__owo_",
-          url: "https://www.threads.com/@bonnie__owo_/post/DehOQ-bk8RP",
-          date: "約 10/15",
-          shares: 26,
-          likes: 37,
-          views: "4.6K"
         }
       ]
     }
