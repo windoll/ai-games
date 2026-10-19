@@ -253,5 +253,59 @@ window.GAMES = [
       date: "2026-10-05",
       stats: "1,400 分享・1,800 讚・47.5 萬瀏覽"
     }
+  },
+  {
+    id: "safe-off-work",
+    name: "今天也要平安下班（校事會議模擬器／輔導室）",
+    url: "https://claude.ai/artifact/AWwoUVfR7KFTQd7ateyNfb",
+    desc: "扮演國中老師撐過每一天，一不小心就被家長投訴、送進校事會議；同頁還有「輔導室：今天也不能倒下」，扮演唯一的專任輔導老師。",
+    genre: "職業模擬",
+    ai: [
+      "Claude"
+    ],
+    aiVerified: true,
+    source: "https://www.nownews.com/news/6882238",
+    hot: "台灣匿名作者參考真實校事會議案例、用 AI 工具做的 claude.ai 網頁遊戲（NOWnews：「運用AI工具製作，共設計120道題目」）。10 月初在 Threads 爆紅，很多人玩不到 3 分鐘就被投訴出局，也引發教育圈討論。",
+    added: "2026-10-20",
+    tw: true,
+    score: 9,
+    scoreDetail: [
+      "台灣媒體 8 家（NOWnews、鏡報、中時、中天、遠見、鏡週刊、TVBS、造咖）+5",
+      "近 7 天有新報導或討論：遠見、鏡週刊 10/16 報導 +2",
+      "高互動貼文：Threads @lihan_168888 33.1K 讚、11.8K 分享（10/8）+2",
+      "Google 搜尋趨勢：沒有查到數據，+0"
+    ],
+    buzz: "Threads @lihan_168888 33.1K 讚、11.8K 分享、110 萬瀏覽（10/8，中天新聞引用）；PTT Teacher 板轉錄文推 18、噓 7，C_Chat 新聞文 7 推。",
+    origin: null,
+    threads: {
+      totalShares: 12319,
+      checked: "2026-10-20",
+      posts: [
+        {
+          account: "@lihan_168888",
+          url: "https://www.threads.com/@lihan_168888/post/DeQ2HFqk0ty",
+          date: "10/8",
+          shares: 11800,
+          likes: 33100,
+          views: "110 萬"
+        },
+        {
+          account: "@do_first_zhongli",
+          url: "https://www.threads.com/@do_first_zhongli/post/DeRjFfBnx64",
+          date: "10/9",
+          shares: 475,
+          likes: 509,
+          views: "3.05 萬"
+        },
+        {
+          account: "@yciingh0320",
+          url: "https://www.threads.com/@yciingh0320/post/DeRiQQMk9Nt",
+          date: "10/9",
+          shares: 44,
+          likes: 30,
+          views: "3.7K"
+        }
+      ]
+    }
   }
 ];

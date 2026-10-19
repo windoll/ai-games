@@ -127,7 +127,7 @@
           <span class="chip ${g.aiVerified ? "ok" : "warn"}">${g.aiVerified ? "AI 製作" : "AI 未證實"}</span>
         </div>
         <p class="desc">${esc(g.desc)}</p>
-        ${g.origin ? `<details class="fold"><summary>📌 原始貼文</summary><div class="fold-body"><a href="${esc(g.origin.url)}" target="_blank" rel="noopener">${esc(g.origin.platform)} ${esc(g.origin.account)}</a><br><span class="muted">${esc(g.origin.date)}・${esc(g.origin.stats)}</span></div></details>` : ""}
+        ${g.origin ? `<details class="fold"><summary>📌 原始貼文</summary><div class="fold-body"><a href="${esc(g.origin.url)}" target="_blank" rel="noopener">${esc(g.origin.platform)} ${esc(g.origin.account)}</a><br><span class="muted">${esc(g.origin.date)}・${esc(g.origin.stats)}</span></div></details>` : g.origin === null ? `<details class="fold"><summary>📌 原始貼文</summary><div class="fold-body muted">作者匿名，找不到原始貼文。</div></details>` : ""}
         ${g.threads ? `<details class="fold"><summary>🔥 Threads 分享最多的貼文</summary><ul class="fold-body">${g.threads.posts.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.account)}</a> <span class="muted">${esc(p.date)}</span><br><span class="muted">分享 ${fmt(p.shares)}・讚 ${fmt(p.likes)}・瀏覽 ${esc(p.views)}</span></li>`).join("")}</ul></details>` : ""}
         <details class="fold"><summary>📊 為什麼紅・熱門分數 ${g.score ?? "-"}/10</summary><div class="fold-body">
           <p>${esc(g.hot)}</p>
