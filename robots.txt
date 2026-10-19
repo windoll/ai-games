@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://windoll.github.io/ai-games/sitemap.xml
