@@ -45,6 +45,8 @@
   .buzz { margin: 0; font-size: 13px; color: var(--muted); border-left: 3px solid var(--line); padding-left: 8px; }
   .buzz summary { cursor: pointer; color: var(--accent); }
   .buzz ul { margin: 4px 0 0; padding-left: 18px; } .buzz a { color: inherit; }
+  .origin { margin: 0; font-size: 13px; padding: 6px 8px; border-radius: 8px; background: var(--chip); }
+  .origin a { color: var(--accent); font-weight: 600; }
   .desc { margin: 0; }
   .hot { margin: 0; color: var(--muted); font-size: 14px; }
   .actions { margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 8px; }
@@ -73,7 +75,7 @@
   <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
 
-  <footer>只收台灣媒體報導 2 家以上的 AI 遊戲。排名依 Threads 分享數：把我們找得到的相關貼文分享數加總，是收錄當天的數字，Threads 不提供完整統計，實際數字只會更高。另附參考用的熱門分數，滿分 10：台灣媒體每家 1 分（最多 5）、近 7 天有新報導或討論 +2、有上千讚或爆文的高互動貼文 +2、Google 搜尋趨勢明顯上升或有公開遊玩人數 +1。標示「AI 未證實」的遊戲，官網沒有說明是用 AI 製作。所有遊戲版權歸原作者所有。</footer>
+  <footer>只收台灣媒體報導 2 家以上、Threads 分享合計 1 萬以上的 AI 遊戲。排名依 Threads 分享數：把我們找得到的相關貼文分享數加總，是收錄當天的數字，Threads 不提供完整統計，實際數字只會更高。另附參考用的熱門分數，滿分 10：台灣媒體每家 1 分（最多 5）、近 7 天有新報導或討論 +2、有上千讚或爆文的高互動貼文 +2、Google 搜尋趨勢明顯上升或有公開遊玩人數 +1。標示「AI 未證實」的遊戲，官網沒有說明是用 AI 製作。所有遊戲版權歸原作者所有。</footer>
 </div>
 
 <script src="games.js"></script>
@@ -119,6 +121,7 @@
         </div>
         <p class="desc">${esc(g.desc)}</p>
         <p class="hot">${esc(g.hot)}</p>
+        ${g.origin ? `<p class="origin">📌 原始貼文：<a href="${esc(g.origin.url)}" target="_blank" rel="noopener">${esc(g.origin.platform)} ${esc(g.origin.account)}</a>（${esc(g.origin.date)}）${esc(g.origin.stats)}</p>` : ""}
         ${g.threads ? `<details class="buzz" open><summary>Threads 分享最多的貼文</summary><ul>${g.threads.posts.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.account)}</a>（${esc(p.date)}）分享 ${fmt(p.shares)}・讚 ${fmt(p.likes)}・瀏覽 ${esc(p.views)}</li>`).join("")}</ul></details>` : ""}
         ${g.scoreDetail ? `<details class="buzz"><summary>為什麼是 ${g.score} 分</summary><ul>${g.scoreDetail.map(d => `<li>${esc(d)}</li>`).join("")}</ul></details>` : ""}
         ${g.buzz ? `<p class="buzz">📊 ${esc(g.buzz)}</p>` : ""}

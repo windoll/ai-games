@@ -10,6 +10,7 @@
 //   source    資料來源網址（新聞、比賽頁、列表）
 //   hot       熱門原因（新聞、得獎、數據）
 //   added     收錄日期 YYYY-MM-DD
+//   origin    作者自己發的原始貼文：platform、account、url、date、stats（實際看到的數字）
 //   threads   Threads 分享數：totalShares = 找到的貼文分享數合計（網站依此排名），posts = 各貼文的帳號、網址、日期、分享、讚、瀏覽
 //   score     熱門分數 0–10（加分規則見 COLLECT.md）（參考用）
 //   scoreDetail 每一項加分的理由與數字
@@ -67,6 +68,13 @@ window.GAMES = [
           views: "1.07 萬"
         }
       ]
+    },
+    origin: {
+      platform: "Threads",
+      account: "@aicodewithme（作者）",
+      url: "https://www.threads.com/@aicodewithme/post/DdzIky4Gl9T",
+      date: "2026-09-27",
+      stats: "11.4 萬分享・10.5 萬讚・300 萬瀏覽"
     }
   },
   {
@@ -120,6 +128,13 @@ window.GAMES = [
           views: "14.1 萬"
         }
       ]
+    },
+    origin: {
+      platform: "X",
+      account: "@JPTER78（作者）",
+      url: "https://x.com/JPTER78/status/2108849627248148894",
+      date: "2026-10-10",
+      stats: "231.6 萬觀看・1.7 萬讚・1,532 轉推・1.3 萬書籤（X 不公開分享數）"
     }
   },
   {
@@ -170,6 +185,13 @@ window.GAMES = [
           views: "4.3K"
         }
       ]
+    },
+    origin: {
+      platform: "Threads",
+      account: "@mrclty（作者）",
+      url: "https://www.threads.com/@mrclty/post/DeEAw_PEaKw",
+      date: "2026-10-03",
+      stats: "731 分享・593 讚・3.97 萬瀏覽"
     }
   },
   {
@@ -223,57 +245,13 @@ window.GAMES = [
           views: "9.16 萬"
         }
       ]
-    }
-  },
-  {
-    id: "counselor-day",
-    name: "輔導室：今天也不能倒下",
-    url: "https://claude.ai/artifact/AWwoUVfR7KFTQd7ateyNfb",
-    desc: "扮演國中唯一的專任輔導老師，同時應付學生、老師和家長，還要寫個案紀錄、記得休息。",
-    genre: "職業模擬",
-    ai: [
-      "Claude"
-    ],
-    aiVerified: true,
-    source: "https://www.gvm.com.tw/article/133824",
-    hot: "台灣匿名網友用 Claude 做的作品（原名《老師，今天能平安下班嗎？》），在社群爆紅，遠見雜誌報導。",
-    added: "2026-10-19",
-    tw: true,
-    score: 7,
-    buzz: "鏡週刊、TVBS、遠見都說爆紅，但找不到原始貼文，網友轉分享最多 30 讚；PTT 沒有討論。",
-    scoreDetail: [
-      "台灣媒體 5 家（遠見、鏡週刊、TVBS、造咖、iqmore）+5",
-      "近 7 天有新報導或討論：遠見、鏡週刊 10/16 報導 +2"
-    ],
-    threads: {
-      totalShares: 550,
-      checked: "2026-10-19",
-      posts: [
-        {
-          account: "@do_first_zhongli",
-          url: "https://www.threads.com/@do_first_zhongli/post/DeRjFfBnx64",
-          date: "10/9",
-          shares: 475,
-          likes: 509,
-          views: "3.05 萬"
-        },
-        {
-          account: "@yciingh0320",
-          url: "https://www.threads.com/@yciingh0320/post/DeRiQQMk9Nt",
-          date: "10/9",
-          shares: 44,
-          likes: 30,
-          views: "3.7K"
-        },
-        {
-          account: "@janet.readingtheworld",
-          url: "https://www.threads.com/@janet.readingtheworld/post/DeQpg_jFAHa",
-          date: "10/8",
-          shares: 31,
-          likes: 24,
-          views: "2.1K"
-        }
-      ]
+    },
+    origin: {
+      platform: "Threads",
+      account: "@jins__earth（作者，韓文）",
+      url: "https://www.threads.com/@jins__earth/post/DeG1MpWm4Nd",
+      date: "2026-10-05",
+      stats: "1,400 分享・1,800 讚・47.5 萬瀏覽"
     }
   }
 ];

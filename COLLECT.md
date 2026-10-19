@@ -23,6 +23,14 @@
 - 寫入 `threads`：`{ totalShares: 3 篇分享數合計, checked: "查詢日期", posts: [{ account, url, date, shares, likes, views }] }`，posts 依分享數由高到低
 - 既有遊戲：重新打開這些貼文更新數字；如果找到分享數更高的新貼文，就換掉最低的那篇
 
+**收錄門檻：`threads.totalShares` 至少 10,000。** 不到 1 萬的新遊戲不收；既有遊戲重新查後不到 1 萬就移除，並在回報裡說明。
+
+## 3.2 原始貼文（每款都要找）
+找作者自己第一次公開遊戲的貼文（Threads、X、Reddit、itch.io 都可以），寫入 `origin`：`{ platform, account, url, date, stats }`。
+- `account` 後面標「（作者）」；`stats` 只寫頁面上實際看到的數字（例：`731 分享・593 讚・3.97 萬瀏覽`）
+- X 用 WebFetch 打不開時，可以用瀏覽器開貼文頁讀數字（不要登入）；X 不公開分享數，寫觀看、讚、轉推、書籤
+- 找不到作者原文就寫 `origin: null`，並在回報裡說明
+
 ## 3.5 熱門分數（參考用，新候選和既有遊戲都要做）
 只記錄頁面上實際看到的數字，看不到就寫「看不到」，不要猜。
 - **Threads：** 找原始貼文（WebSearch `site:threads.com 遊戲名`，再 WebFetch 貼文網址），記下讚、留言、轉發、分享、瀏覽數和日期。
@@ -43,7 +51,7 @@
 
 ## 4. 寫入
 - 新遊戲加進 `window.GAMES` 陣列，欄位格式照檔案上方說明，簡介用繁體中文。
-- 既有遊戲只可以更新 `threads`、`score`、`scoreDetail`、`buzz` 四個欄位（重新查到的新數字），其他欄位不要改；台灣媒體不到 2 家的才移除。
+- 既有遊戲只可以更新 `threads`、`origin`、`score`、`scoreDetail`、`buzz` 五個欄位（重新查到的新數字），其他欄位不要改；不符合收錄門檻（台灣媒體 2 家、Threads 分享 1 萬）的才移除。
 - 陣列依 `threads.totalShares` 由高到低排列。
 - 把 `window.LAST_UPDATED` 改成今天的日期。
 - 一次最多加 10 款，挑 Threads 分享數最高的。
