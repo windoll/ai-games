@@ -1,6 +1,9 @@
 // AI 遊戲收錄資料。定期收集排程會在這個陣列「新增」項目，不會刪除舊的。
 // 欄位：
 //   id        唯一代號（小寫英數與連字號）
+//   aliases   這款遊戲的所有名稱、別名、網址關鍵字，每次搜尋都要全部用上
+//   lastActive 最近一次有新報導或新貼文的日期 YYYY-MM-DD；距今超過 30 天，網站標成「已退燒」
+//   lastActiveNote lastActive 的依據
 //   name      遊戲名稱
 //   url       可直接遊玩的網址
 //   desc      一句話簡介（繁體中文）
@@ -75,7 +78,18 @@ window.GAMES = [
       url: "https://www.threads.com/@aicodewithme/post/DdzIky4Gl9T",
       date: "2026-09-27",
       stats: "11.4 萬分享・10.5 萬讚・300 萬瀏覽"
-    }
+    },
+    aliases: [
+      "臺北GTA",
+      "台北GTA",
+      "台北版GTA",
+      "TAIPEI RUSH",
+      "臺北狂飆",
+      "台北狂飆",
+      "taipeigta"
+    ],
+    lastActive: "2026-10-17",
+    lastActiveNote: "作者 10/17 在 Threads 發倫敦版"
   },
   {
     id: "pokesurvivor",
@@ -135,7 +149,16 @@ window.GAMES = [
       url: "https://x.com/JPTER78/status/2108849627248148894",
       date: "2026-10-10",
       stats: "231.6 萬觀看・1.7 萬讚・1,532 轉推・1.3 萬書籤（X 不公開分享數）"
-    }
+    },
+    aliases: [
+      "PokéSurvivor",
+      "PokeSurvivor",
+      "寶可夢倖存者",
+      "pokesurvivor.com",
+      "JPTER78"
+    ],
+    lastActive: "2026-10-15",
+    lastActiveNote: "NOWnews 10/15 報導"
   },
   {
     id: "fab24hr",
@@ -192,7 +215,15 @@ window.GAMES = [
       url: "https://www.threads.com/@mrclty/post/DeEAw_PEaKw",
       date: "2026-10-03",
       stats: "731 分享・593 讚・3.97 萬瀏覽"
-    }
+    },
+    aliases: [
+      "fab24hr",
+      "晶圓廠打工人",
+      "半導體晶圓廠打工人的一天",
+      "晶圓廠模擬器"
+    ],
+    lastActive: "2026-10-16",
+    lastActiveNote: "遠見 10/16 報導"
   },
   {
     id: "1in8b",
@@ -252,7 +283,17 @@ window.GAMES = [
       url: "https://www.threads.com/@jins__earth/post/DeG1MpWm4Nd",
       date: "2026-10-05",
       stats: "1,400 分享・1,800 讚・47.5 萬瀏覽"
-    }
+    },
+    aliases: [
+      "80億分之1",
+      "80億分之一",
+      "八十億分之一",
+      "1 in 8 Billion",
+      "1in8b",
+      "投胎模擬器"
+    ],
+    lastActive: "2026-10-18",
+    lastActiveNote: "ETtoday 10/18 報導、PTT 10/18 討論"
   },
   {
     id: "safe-off-work",
@@ -306,6 +347,15 @@ window.GAMES = [
           views: "3.7K"
         }
       ]
-    }
+    },
+    aliases: [
+      "今天也要平安下班",
+      "校事會議模擬器",
+      "老師，今天能平安下班嗎",
+      "輔導室：今天也不能倒下",
+      "笑鼠會議"
+    ],
+    lastActive: "2026-10-16",
+    lastActiveNote: "遠見、鏡週刊 10/16 報導"
   }
 ];
