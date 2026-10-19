@@ -100,5 +100,28 @@ window.GAMES = [
       "台灣媒體 5 家（遠見、鏡週刊、TVBS、造咖、iqmore）+5",
       "近 7 天有新報導或討論：遠見、鏡週刊 10/16 報導 +2"
     ]
+  },
+  {
+    id: "pokesurvivor",
+    name: "PokéSurvivor 寶可夢倖存者",
+    url: "https://pokesurvivor.com/",
+    desc: "寶可夢版《吸血鬼倖存者》，收錄 966 隻寶可夢，自動攻擊、升級選招式，最多 4 人連線，網頁免費玩。",
+    genre: "類倖存者",
+    ai: [
+      "AI 程式助手"
+    ],
+    aiVerified: true,
+    source: "https://www.nownews.com/news/6883368",
+    hot: "國外開發者 jpter78 的同人作品，itch.io 頁面自述「用 AI 程式助手開發（程式碼、原創音樂、部分 UI 圖示），寶可夢圖不是 AI 生成」。10 月中在台灣 Threads 爆紅，被稱為「精神時光屋」。注意：pokesurvivor.co 等網址是別人架的仿站。",
+    added: "2026-10-19",
+    tw: true,
+    score: 4,
+    scoreDetail: [
+      "台灣媒體 2 家（NOWnews、Yahoo 奇摩新聞）+2",
+      "近 7 天有新報導或討論：NOWnews 10/15、Yahoo 10/14 報導 +2",
+      "高互動貼文：沒找到上千讚的 Threads 貼文或 PTT 爆文，+0",
+      "Google 搜尋趨勢：這次查詢被暫時擋住，沒有數據，+0"
+    ],
+    buzz: "Threads 轉分享文多為數十讚以內（例：@wattbrother 11 讚、1.3K 瀏覽）；PTT 搜不到討論；Dcard 有攻略文；itch.io 評分 4.9（8 則）。"
   }
 ];
