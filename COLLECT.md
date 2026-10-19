@@ -54,8 +54,9 @@
 - 新遊戲加進 `window.GAMES` 陣列（`tw: true`），欄位格式照檔案上方說明，簡介用繁體中文。
 - 既有遊戲只可以更新 `aliases`、`threads`、`origin`、`lastActive`、`lastActiveNote`、`score`、`scoreDetail`、`buzz`，其他欄位不要改。
 - 陣列依 `threads.totalShares` 由高到低排列。
-- 把 `window.LAST_UPDATED` 改成今天的日期。
+- 把 `window.LAST_UPDATED` 改成今天的日期（**每天都要改**，即使沒有新遊戲）。
 - 一次最多加 10 款，挑 Threads 分享數最高的。
+- **每天存紀錄：** games.js 改完、`node --check games.js` 通過後，在專案資料夾執行 `node snapshot.js`，它會把今天的數字存進 `history.js`（不要手動改 history.js）。網站的「現在最紅」就是用這份紀錄算最近 7 天增加的分享數，所以**哪天沒跑，那天就會缺資料**。
 
 ## 4. 回報
 最後列出：

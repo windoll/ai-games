@@ -77,17 +77,18 @@
     <input id="q" type="search" placeholder="搜尋遊戲名稱、類型、AI 工具…">
     <select id="genre"><option value="">全部類型</option></select>
     <select id="sort">
-      <option value="shares">Threads 分享數</option><option value="score">熱門分數</option><option value="new">最新收錄</option>
+      <option value="trend">現在最紅（近 7 天新增分享）</option><option value="shares">累計 Threads 分享數</option><option value="score">熱門分數</option><option value="new">最新收錄</option>
       <option value="name">名稱</option>
     </select>
   </div>
-  <div class="count" id="count"></div>
+  <div class="count"><span id="count"></span> <span id="trend-note"></span></div>
   <div class="grid" id="grid"></div>
 
   <footer>只收台灣媒體報導 2 家以上、Threads 分享合計 5,000 以上的 AI 遊戲；超過 30 天沒有新報導或新貼文的標成「已退燒」，排到最後。排名依 Threads 分享數：把我們找得到的相關貼文分享數加總，是收錄當天的數字，Threads 不提供完整統計，實際數字只會更高。另附參考用的熱門分數，滿分 10：台灣媒體每家 1 分（最多 5）、近 7 天有新報導或討論 +2、有上千讚或爆文的高互動貼文 +2、Google 搜尋趨勢明顯上升或有公開遊玩人數 +1。標示「AI 未證實」的遊戲，官網沒有說明是用 AI 製作。所有遊戲版權歸原作者所有。</footer>
 </div>
 
 <script src="games.js"></script>
+<script src="history.js"></script>
 <script>
   const games = window.GAMES || [];
   const $ = id => document.getElementById(id);
@@ -100,6 +101,23 @@
   [...new Set(games.map(g => g.genre))].sort().forEach(g => {
     const o = document.createElement("option"); o.value = o.textContent = g; $("genre").appendChild(o);
   });
+
+  // 「現在最紅」：用 history.js 的每日紀錄，算最近 7 天增加的 Threads 分享數
+  const H = window.HISTORY || {};
+  const days = Object.keys(H).sort();
+  const latest = days[days.length - 1];
+  const dayDiff = (a, b) => Math.round((new Date(a) - new Date(b)) / 86400000);
+  const baseDay = latest ? (days.filter(d => dayDiff(latest, d) >= 7).pop() || days[0]) : null;
+  const span = latest ? dayDiff(latest, baseDay) : 0;
+  const trendOn = span >= 1;
+  function gain(g) {
+    if (!trendOn) return null;
+    const first = days.find(d => d >= baseDay && H[d][g.id]);
+    if (!first || !H[latest][g.id]) return null;
+    return H[latest][g.id].shares - H[first][g.id].shares;
+  }
+  if (trendOn) { $("sort").value = "trend"; $("trend-note").textContent = `「現在最紅」= 最近 ${span} 天增加的 Threads 分享數（${baseDay} → ${latest}）。`; }
+  else { $("sort").value = "shares"; $("sort").querySelector('[value="trend"]').disabled = true; $("trend-note").textContent = `「現在最紅」排名需要至少 2 天的紀錄，從 ${days[0] || "今天"} 開始累積中。`; }
 
   // 超過 30 天沒有新報導或新貼文的標成「已退燒」，排到最後
   const coolCutoff = new Date(window.LAST_UPDATED || Date.now());
@@ -120,15 +138,17 @@
     list.sort((a, b) => (sortBy === "name" ? 0 : cooled(a) - cooled(b)) || (sortBy === "name" ? (a, b) => a.name.localeCompare(b.name, "zh-Hant")
       : sortBy === "new" ? (a, b) => b.added.localeCompare(a.added) || (b.score || 0) - (a.score || 0)
       : sortBy === "score" ? (a, b) => (b.score || 0) - (a.score || 0)
+      : sortBy === "trend" ? (a, b) => (gain(b) ?? -1) - (gain(a) ?? -1) || (b.threads?.totalShares || 0) - (a.threads?.totalShares || 0)
       : (a, b) => (b.threads?.totalShares || 0) - (a.threads?.totalShares || 0))(a, b));
 
     $("count").textContent = `共 ${list.length} 款遊戲`;
     $("grid").innerHTML = list.map((g, i) => `
       <article class="card${cooled(g) ? " cooled" : ""}">
-        <h2>${sortBy === "shares" || sortBy === "score" ? `<span class="rank">#${i + 1}</span>` : ""}${esc(g.name)}</h2>
+        <h2>${sortBy !== "name" && sortBy !== "new" ? `<span class="rank">#${i + 1}</span>` : ""}${esc(g.name)}</h2>
         <div class="meta">
           ${cooled(g) ? `<span class="chip">已退燒</span>` : ""}
           ${g.threads ? `<span class="chip tw">Threads 分享 ${fmt(g.threads.totalShares)}</span>` : ""}
+          ${gain(g) != null ? `<span class="chip heat">近 ${span} 天 ${gain(g) > 0 ? "↑ +" + fmt(gain(g)) : "持平"}</span>` : ""}
           <span class="chip">${esc(g.genre)}</span>
           ${(g.ai || []).map(t => `<span class="chip">${esc(t)}</span>`).join("")}
           <span class="chip ${g.aiVerified ? "ok" : "warn"}">${g.aiVerified ? "AI 製作" : "AI 未證實"}</span>
