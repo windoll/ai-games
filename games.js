@@ -1,6 +1,8 @@
 // AI 遊戲收錄資料。定期收集排程會在這個陣列「新增」項目，不會刪除舊的。
 // 欄位：
 //   id        唯一代號（小寫英數與連字號）
+//   tier      main = 主榜（達到收錄門檻）；watch = 觀察中（有 AI 證據和一些熱度，還沒達門檻）
+//   missing   觀察中的遊戲還差什麼（例：Threads 分享合計 4,200，門檻 5,000）
 //   aliases   這款遊戲的所有名稱、別名、網址關鍵字，每次搜尋都要全部用上
 //   lastActive 最近一次有新報導或新貼文的日期 YYYY-MM-DD；距今超過 30 天，網站標成「已退燒」
 //   lastActiveNote lastActive 的依據
@@ -89,7 +91,8 @@ window.GAMES = [
       "taipeigta"
     ],
     lastActive: "2026-10-17",
-    lastActiveNote: "作者 10/17 在 Threads 發倫敦版"
+    lastActiveNote: "作者 10/17 在 Threads 發倫敦版",
+    tier: "main"
   },
   {
     id: "pokesurvivor",
@@ -158,7 +161,8 @@ window.GAMES = [
       "JPTER78"
     ],
     lastActive: "2026-10-15",
-    lastActiveNote: "NOWnews 10/15 報導"
+    lastActiveNote: "NOWnews 10/15 報導",
+    tier: "main"
   },
   {
     id: "fab24hr",
@@ -223,7 +227,8 @@ window.GAMES = [
       "晶圓廠模擬器"
     ],
     lastActive: "2026-10-16",
-    lastActiveNote: "遠見 10/16 報導"
+    lastActiveNote: "遠見 10/16 報導",
+    tier: "main"
   },
   {
     id: "1in8b",
@@ -293,7 +298,8 @@ window.GAMES = [
       "投胎模擬器"
     ],
     lastActive: "2026-10-18",
-    lastActiveNote: "ETtoday 10/18 報導、PTT 10/18 討論"
+    lastActiveNote: "ETtoday 10/18 報導、PTT 10/18 討論",
+    tier: "main"
   },
   {
     id: "safe-off-work",
@@ -356,6 +362,80 @@ window.GAMES = [
       "笑鼠會議"
     ],
     lastActive: "2026-10-16",
-    lastActiveNote: "遠見、鏡週刊 10/16 報導"
+    lastActiveNote: "遠見、鏡週刊 10/16 報導",
+    tier: "main"
+  },
+  {
+    id: "taiwan-sanbao",
+    tier: "watch",
+    name: "台灣三寶模擬器",
+    aliases: [
+      "台灣三寶模擬器",
+      "台北三寶模擬器",
+      "三寶模擬器"
+    ],
+    url: "https://apps.app.charonyu.cc/play/taiwan-sanbao/index.html",
+    desc: "以台灣交通為題材的駕駛遊戲，閃行人、閃狗、閃不打方向燈切車道的車，看你能撐幾公尺。",
+    genre: "駕駛",
+    ai: [],
+    aiVerified: true,
+    source: "https://www.gvm.com.tw/article/133824",
+    hot: "台灣網友阿班（Threads @aihub.tw）作品，遠見雜誌列為 Threads 熱門的 AI 協作遊戲。",
+    missing: "Threads 分享合計 4,200（門檻 5,000）；第 2 個帳號還沒找到 500 分享以上的貼文",
+    added: "2026-10-20",
+    tw: true,
+    lastActive: "2026-10-12",
+    lastActiveNote: "Threads @your.engineer.ben 10/12 貼文",
+    origin: null,
+    threads: {
+      totalShares: 4200,
+      checked: "2026-10-20",
+      posts: [
+        {
+          account: "@your.engineer.ben",
+          url: "https://www.threads.com/@your.engineer.ben/post/DeZkVtqE4wM",
+          date: "10/12",
+          shares: 4200,
+          likes: 1900,
+          views: "16.5 萬"
+        }
+      ]
+    }
+  },
+  {
+    id: "komiya",
+    tier: "watch",
+    name: "取調室的小宮（取調室の小宮）",
+    aliases: [
+      "取調室的小宮",
+      "取調室の小宮",
+      "堀井雄二 AI 遊戲"
+    ],
+    url: "https://claude.ai/artifact/HgsUQQywVPG8X87dp1NWHu",
+    desc: "扮演刑警偵訊 72 歲的前鎖匠小宮，找出供述和證據的矛盾，逼近當鋪金庫失竊案的真相。",
+    genre: "推理",
+    ai: [
+      "Claude"
+    ],
+    aiVerified: true,
+    source: "https://www.cna.com.tw/business/chinese/447040",
+    hot: "《勇者鬥惡龍》之父堀井雄二 10/11 公開，中央社：「利用AI工具Claude，花了大約30分鐘」完成。主要在日本爆紅，台灣有中央社、動區報導。",
+    missing: "台灣 Threads 上還沒找到分享 500 以上的貼文",
+    added: "2026-10-20",
+    tw: true,
+    lastActive: "2026-10-15",
+    lastActiveNote: "中央社 10/15 報導",
+    origin: {
+      platform: "X",
+      account: "@YujiHorii（作者）",
+      url: "https://x.com/YujiHorii/status/2109222798287835281",
+      date: "2026-10-11",
+      stats: "日本媒體報導隔天約 199 萬瀏覽（未自行查看）"
+    },
+    threads: {
+      totalShares: 0,
+      checked: "2026-10-20",
+      posts: []
+    }
   }
 ];
