@@ -18,7 +18,7 @@
 //   score     熱門分數 0–10（加分規則見 COLLECT.md）（參考用）
 //   scoreDetail 每一項加分的理由與數字
 //   buzz      熱度數據摘要（Threads、PTT、Google 搜尋趨勢的實際數字與日期）
-//   tw        true = 台灣媒體報導 2 家以上（網站只收 tw: true）
+//   tw        true = 在台灣 Threads 上有熱度（網站只收 tw: true；門檻見 COLLECT.md）
 window.LAST_UPDATED = "2026-10-20";
 window.GAMES = [
   {
