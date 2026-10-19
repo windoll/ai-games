@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 遊戲收藏館｜每日收集爆紅的 AI 製作網頁遊戲</title>
+<meta name="description" content="每天收集最近爆紅、用 AI（Claude、Cursor、Codex 等）做出來的免費網頁遊戲，例如臺北 GTA、80億分之1、Vibe Jam 得獎作品，點了就能玩。">
+<meta name="keywords" content="AI 遊戲, AI 做的遊戲, vibe coding 遊戲, 網頁遊戲, 免費線上遊戲, Claude 遊戲, 臺北 GTA">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI 遊戲收藏館">
+<meta property="og:description" content="每天收集爆紅的 AI 製作網頁遊戲，點了就能玩。">
+<meta property="og:locale" content="zh_TW">
+<style>
+  :root {
+    --bg: #f6f5f1; --card: #ffffff; --text: #1d1d1f; --muted: #6b6b70;
+    --line: #e3e1da; --accent: #d9480f; --chip: #f0eee7; --ok: #2b8a3e; --warn: #b07a00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141416; --card: #1e1e22; --text: #ededf0; --muted: #9a9aa2;
+      --line: #2e2e34; --accent: #ff8a4c; --chip: #2a2a30; --ok: #69db7c; --warn: #ffd43b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 system-ui, "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 16px 64px; }
+  header h1 { margin: 0 0 4px; font-size: 32px; }
+  header p { margin: 0; color: var(--muted); }
+  .bar { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 16px; }
+  .bar input, .bar select { padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px;
+    background: var(--card); color: var(--text); font: inherit; }
+  .bar input { flex: 1 1 240px; }
+  .count { color: var(--muted); font-size: 14px; margin-bottom: 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px;
+    display: flex; flex-direction: column; gap: 8px; }
+  .card h2 { margin: 0; font-size: 19px; line-height: 1.35; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { background: var(--chip); border-radius: 999px; padding: 2px 10px; font-size: 13px; }
+  .chip.ok { color: var(--ok); } .chip.warn { color: var(--warn); }
+  .desc { margin: 0; }
+  .hot { margin: 0; color: var(--muted); font-size: 14px; }
+  .actions { margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 8px; }
+  .play { background: var(--accent); color: #fff; text-decoration: none; padding: 8px 16px;
+    border-radius: 10px; font-weight: 600; }
+  .src { color: var(--muted); font-size: 13px; }
+  .new { color: var(--accent); font-weight: 700; font-size: 13px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>AI 遊戲收藏館</h1>
+    <p>收集最近爆紅、用 AI 做出來的網頁遊戲。最後更新：<span id="updated"></span></p>
+  </header>
+
+  <div class="bar">
+    <input id="q" type="search" placeholder="搜尋遊戲名稱、類型、AI 工具…">
+    <select id="genre"><option value="">全部類型</option></select>
+    <select id="sort">
+      <option value="new">最新收錄</option>
+      <option value="name">名稱</option>
+    </select>
+  </div>
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+
+  <footer>標示「AI 未證實」的遊戲，官網沒有說明是用 AI 製作。所有遊戲版權歸原作者所有。</footer>
+</div>
+
+<script src="games.js"></script>
+<script>
+  const games = window.GAMES || [];
+  const $ = id => document.getElementById(id);
+  $("updated").textContent = window.LAST_UPDATED || "";
+
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const host = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
+
+  [...new Set(games.map(g => g.genre))].sort().forEach(g => {
+    const o = document.createElement("option"); o.value = o.textContent = g; $("genre").appendChild(o);
+  });
+
+  // 最近 14 天內收錄的標成 NEW
+  const newCutoff = new Date(window.LAST_UPDATED || Date.now());
+  newCutoff.setDate(newCutoff.getDate() - 14);
+
+  function render() {
+    const q = $("q").value.trim().toLowerCase();
+    const genre = $("genre").value;
+    let list = games.filter(g =>
+      (!genre || g.genre === genre) &&
+      (!q || [g.name, g.desc, g.genre, g.hot, ...(g.ai || [])].join(" ").toLowerCase().includes(q)));
+    list.sort($("sort").value === "name"
+      ? (a, b) => a.name.localeCompare(b.name, "zh-Hant")
+      : (a, b) => b.added.localeCompare(a.added));
+
+    $("count").textContent = `共 ${list.length} 款遊戲`;
+    $("grid").innerHTML = list.map(g => `
+      <article class="card">
+        <h2>${esc(g.name)}</h2>
+        <div class="meta">
+          <span class="chip">${esc(g.genre)}</span>
+          ${(g.ai || []).map(t => `<span class="chip">${esc(t)}</span>`).join("")}
+          <span class="chip ${g.aiVerified ? "ok" : "warn"}">${g.aiVerified ? "AI 製作" : "AI 未證實"}</span>
+        </div>
+        <p class="desc">${esc(g.desc)}</p>
+        <p class="hot">${esc(g.hot)}</p>
+        <div class="actions">
+          <a class="src" href="${esc(g.source)}" target="_blank" rel="noopener">來源：${esc(host(g.source))}</a>
+          ${new Date(g.added) >= newCutoff ? '<span class="new">NEW</span>' : ""}
+          <a class="play" href="${esc(g.url)}" target="_blank" rel="noopener">去玩 →</a>
+        </div>
+      </article>`).join("");
+  }
+  ["q", "genre", "sort"].forEach(id => $(id).addEventListener("input", render));
+  render();
+</script>
+</body>
+</html>
