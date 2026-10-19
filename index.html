@@ -43,6 +43,8 @@
   .chip.tw { background: var(--accent); color: #fff; font-weight: 600; }
   .chip.heat { border: 1px solid var(--accent); color: var(--accent); }
   .buzz { margin: 0; font-size: 13px; color: var(--muted); border-left: 3px solid var(--line); padding-left: 8px; }
+  .buzz summary { cursor: pointer; color: var(--accent); }
+  .buzz ul { margin: 4px 0 0; padding-left: 18px; }
   .desc { margin: 0; }
   .hot { margin: 0; color: var(--muted); font-size: 14px; }
   .actions { margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 8px; }
@@ -71,7 +73,7 @@
   <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
 
-  <footer>熱度依 Threads／PTT 互動數與 Google 搜尋趨勢（台灣）判斷，數據為收錄當時的數字。標示「AI 未證實」的遊戲，官網沒有說明是用 AI 製作。所有遊戲版權歸原作者所有。</footer>
+  <footer>只收台灣媒體報導 2 家以上的 AI 遊戲。熱門分數滿分 10：台灣媒體每家 1 分（最多 5）、近 7 天有新報導或討論 +2、有上千讚或爆文的高互動貼文 +2、Google 搜尋趨勢明顯上升或有公開遊玩人數 +1。標示「AI 未證實」的遊戲，官網沒有說明是用 AI 製作。所有遊戲版權歸原作者所有。</footer>
 </div>
 
 <script src="games.js"></script>
@@ -107,13 +109,14 @@
       <article class="card">
         <h2>${sortBy === "score" ? `<span class="rank">#${i + 1}</span>` : ""}${esc(g.name)}</h2>
         <div class="meta">
-          ${g.heat ? `<span class="chip heat">熱度：${esc(g.heat)}</span>` : ""}
+          ${g.score != null ? `<span class="chip heat">熱門分數 ${g.score}/10</span>` : ""}
           <span class="chip">${esc(g.genre)}</span>
           ${(g.ai || []).map(t => `<span class="chip">${esc(t)}</span>`).join("")}
           <span class="chip ${g.aiVerified ? "ok" : "warn"}">${g.aiVerified ? "AI 製作" : "AI 未證實"}</span>
         </div>
         <p class="desc">${esc(g.desc)}</p>
         <p class="hot">${esc(g.hot)}</p>
+        ${g.scoreDetail ? `<details class="buzz"><summary>為什麼是 ${g.score} 分</summary><ul>${g.scoreDetail.map(d => `<li>${esc(d)}</li>`).join("")}</ul></details>` : ""}
         ${g.buzz ? `<p class="buzz">📊 ${esc(g.buzz)}</p>` : ""}
         <div class="actions">
           <a class="src" href="${esc(g.source)}" target="_blank" rel="noopener">來源：${esc(host(g.source))}</a>
