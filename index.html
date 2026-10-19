@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>台灣 AI 遊戲熱度榜｜每日收集台灣爆紅的 AI 製作遊戲</title>
-<meta name="description" content="每天收集在台灣爆紅、用 AI 做出來的免費網頁遊戲，依 Threads、PTT、Google 搜尋趨勢的實際數據排出熱度榜，例如臺北 GTA、80億分之1、fab24hr。">
+<meta name="description" content="每天收集在台灣爆紅、用 AI 做出來的免費網頁遊戲，依 Threads 分享數排出熱度榜，例如臺北 GTA、80億分之1、fab24hr。">
 <meta name="keywords" content="AI 遊戲, AI 做的遊戲, vibe coding 遊戲, 網頁遊戲, 免費線上遊戲, Claude 遊戲, 臺北 GTA, 80億分之1, Threads 爆紅遊戲, 台灣 AI 遊戲">
 <link rel="canonical" href="https://windoll.github.io/ai-games/">
 <meta property="og:url" content="https://windoll.github.io/ai-games/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="台灣 AI 遊戲熱度榜">
-<meta property="og:description" content="每天收集台灣爆紅的 AI 製作遊戲，依實際熱度排名，點了就能玩。">
+<meta property="og:description" content="每天收集台灣爆紅的 AI 製作遊戲，依 Threads 分享數排名，點了就能玩。">
 <meta property="og:locale" content="zh_TW">
 <style>
   :root {
@@ -44,7 +44,7 @@
   .chip.heat { border: 1px solid var(--accent); color: var(--accent); }
   .buzz { margin: 0; font-size: 13px; color: var(--muted); border-left: 3px solid var(--line); padding-left: 8px; }
   .buzz summary { cursor: pointer; color: var(--accent); }
-  .buzz ul { margin: 4px 0 0; padding-left: 18px; }
+  .buzz ul { margin: 4px 0 0; padding-left: 18px; } .buzz a { color: inherit; }
   .desc { margin: 0; }
   .hot { margin: 0; color: var(--muted); font-size: 14px; }
   .actions { margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 8px; }
@@ -59,21 +59,21 @@
 <div class="wrap">
   <header>
     <h1>台灣 AI 遊戲熱度榜</h1>
-    <p>收集在台灣爆紅、用 AI 做出來的遊戲，依實際熱度排名。最後更新：<span id="updated"></span></p>
+    <p>收集在台灣爆紅、用 AI 做出來的遊戲，依 Threads 分享數排名。最後更新：<span id="updated"></span></p>
   </header>
 
   <div class="bar">
     <input id="q" type="search" placeholder="搜尋遊戲名稱、類型、AI 工具…">
     <select id="genre"><option value="">全部類型</option></select>
     <select id="sort">
-      <option value="score">熱度排名</option><option value="new">最新收錄</option>
+      <option value="shares">Threads 分享數</option><option value="score">熱門分數</option><option value="new">最新收錄</option>
       <option value="name">名稱</option>
     </select>
   </div>
   <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
 
-  <footer>只收台灣媒體報導 2 家以上的 AI 遊戲。熱門分數滿分 10：台灣媒體每家 1 分（最多 5）、近 7 天有新報導或討論 +2、有上千讚或爆文的高互動貼文 +2、Google 搜尋趨勢明顯上升或有公開遊玩人數 +1。標示「AI 未證實」的遊戲，官網沒有說明是用 AI 製作。所有遊戲版權歸原作者所有。</footer>
+  <footer>只收台灣媒體報導 2 家以上的 AI 遊戲。排名依 Threads 分享數：把我們找得到的相關貼文分享數加總，是收錄當天的數字，Threads 不提供完整統計，實際數字只會更高。另附參考用的熱門分數，滿分 10：台灣媒體每家 1 分（最多 5）、近 7 天有新報導或討論 +2、有上千讚或爆文的高互動貼文 +2、Google 搜尋趨勢明顯上升或有公開遊玩人數 +1。標示「AI 未證實」的遊戲，官網沒有說明是用 AI 製作。所有遊戲版權歸原作者所有。</footer>
 </div>
 
 <script src="games.js"></script>
@@ -83,6 +83,7 @@
   $("updated").textContent = window.LAST_UPDATED || "";
 
   const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const fmt = n => n >= 10000 ? (n / 10000).toFixed(n >= 100000 ? 1 : 2).replace(/\.?0+$/, "") + " 萬" : n.toLocaleString("zh-TW");
   const host = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
 
   [...new Set(games.map(g => g.genre))].sort().forEach(g => {
@@ -102,13 +103,15 @@
     const sortBy = $("sort").value;
     list.sort(sortBy === "name" ? (a, b) => a.name.localeCompare(b.name, "zh-Hant")
       : sortBy === "new" ? (a, b) => b.added.localeCompare(a.added) || (b.score || 0) - (a.score || 0)
-      : (a, b) => (b.score || 0) - (a.score || 0));
+      : sortBy === "score" ? (a, b) => (b.score || 0) - (a.score || 0)
+      : (a, b) => (b.threads?.totalShares || 0) - (a.threads?.totalShares || 0));
 
     $("count").textContent = `共 ${list.length} 款遊戲`;
     $("grid").innerHTML = list.map((g, i) => `
       <article class="card">
-        <h2>${sortBy === "score" ? `<span class="rank">#${i + 1}</span>` : ""}${esc(g.name)}</h2>
+        <h2>${sortBy === "shares" || sortBy === "score" ? `<span class="rank">#${i + 1}</span>` : ""}${esc(g.name)}</h2>
         <div class="meta">
+          ${g.threads ? `<span class="chip tw">Threads 分享 ${fmt(g.threads.totalShares)}</span>` : ""}
           ${g.score != null ? `<span class="chip heat">熱門分數 ${g.score}/10</span>` : ""}
           <span class="chip">${esc(g.genre)}</span>
           ${(g.ai || []).map(t => `<span class="chip">${esc(t)}</span>`).join("")}
@@ -116,6 +119,7 @@
         </div>
         <p class="desc">${esc(g.desc)}</p>
         <p class="hot">${esc(g.hot)}</p>
+        ${g.threads ? `<details class="buzz" open><summary>Threads 分享最多的貼文</summary><ul>${g.threads.posts.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.account)}</a>（${esc(p.date)}）分享 ${fmt(p.shares)}・讚 ${fmt(p.likes)}・瀏覽 ${esc(p.views)}</li>`).join("")}</ul></details>` : ""}
         ${g.scoreDetail ? `<details class="buzz"><summary>為什麼是 ${g.score} 分</summary><ul>${g.scoreDetail.map(d => `<li>${esc(d)}</li>`).join("")}</ul></details>` : ""}
         ${g.buzz ? `<p class="buzz">📊 ${esc(g.buzz)}</p>` : ""}
         <div class="actions">

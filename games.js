@@ -10,12 +10,168 @@
 //   source    資料來源網址（新聞、比賽頁、列表）
 //   hot       熱門原因（新聞、得獎、數據）
 //   added     收錄日期 YYYY-MM-DD
-//   score     熱門分數 0–10（加分規則見 COLLECT.md），網站依此排序
+//   threads   Threads 分享數：totalShares = 找到的貼文分享數合計（網站依此排名），posts = 各貼文的帳號、網址、日期、分享、讚、瀏覽
+//   score     熱門分數 0–10（加分規則見 COLLECT.md）（參考用）
 //   scoreDetail 每一項加分的理由與數字
 //   buzz      熱度數據摘要（Threads、PTT、Google 搜尋趨勢的實際數字與日期）
 //   tw        true = 台灣媒體報導 2 家以上（網站只收 tw: true）
 window.LAST_UPDATED = "2026-10-19";
 window.GAMES = [
+  {
+    id: "taipei-gta",
+    name: "臺北 GTA / TAIPEI RUSH 臺北狂飆",
+    url: "https://taipeigta.com/",
+    desc: "台灣開發者把西門町、台北車站、忠孝復興搬進瀏覽器的 3D 開放世界，可以開車騎車亂逛。",
+    genre: "開放世界",
+    ai: [
+      "AICodeWith"
+    ],
+    aiVerified: true,
+    source: "https://technews.tw/2026/09/30/taipei-gta/",
+    hot: "9 月底在 Threads 公開後爆紅，科技新報、新頭殼、Yahoo 都有報導。作者說燒了超過 1 萬美元 AI Token；「三天 120 萬人同時在線」未經證實。",
+    added: "2026-10-19",
+    tw: true,
+    score: 9,
+    buzz: "Threads 原始貼文 10.5 萬讚、300 萬瀏覽、11.4 萬分享（9/27）；Google 搜尋趨勢台灣 10/3 達高峰 100；PTT 每篇只有個位數推。",
+    scoreDetail: [
+      "台灣媒體 5 家（科技新報、新頭殼、Yahoo 奇摩新聞、4Gamers、鏈新聞）+5",
+      "近 7 天有新報導或討論：開發者 10/15、10/17 在 Threads 發新地圖仍有數百讚 +2",
+      "高互動貼文：Threads 原文 10.5 萬讚、300 萬瀏覽（9/27） +2"
+    ],
+    threads: {
+      totalShares: 115887,
+      checked: "2026-10-19",
+      posts: [
+        {
+          account: "@aicodewithme",
+          url: "https://www.threads.com/@aicodewithme/post/DdzIky4Gl9T",
+          date: "9/27",
+          shares: 114000,
+          likes: 105000,
+          views: "300 萬"
+        },
+        {
+          account: "@dekyllllll",
+          url: "https://www.threads.com/@dekyllllll/post/Dd6v96iCsD0",
+          date: "9/30",
+          shares: 1800,
+          likes: 4700,
+          views: "28.3 萬"
+        },
+        {
+          account: "@aicodewithme",
+          url: "https://www.threads.com/@aicodewithme/post/Degs6yqGx0c",
+          date: "約 10/15",
+          shares: 87,
+          likes: 397,
+          views: "1.07 萬"
+        }
+      ]
+    }
+  },
+  {
+    id: "pokesurvivor",
+    name: "PokéSurvivor 寶可夢倖存者",
+    url: "https://pokesurvivor.com/",
+    desc: "寶可夢版《吸血鬼倖存者》，收錄 966 隻寶可夢，自動攻擊、升級選招式，最多 4 人連線，網頁免費玩。",
+    genre: "類倖存者",
+    ai: [
+      "AI 程式助手"
+    ],
+    aiVerified: true,
+    source: "https://www.nownews.com/news/6883368",
+    hot: "國外開發者 jpter78 的同人作品，itch.io 頁面自述「用 AI 程式助手開發（程式碼、原創音樂、部分 UI 圖示），寶可夢圖不是 AI 生成」。10 月中在台灣 Threads 爆紅，被稱為「精神時光屋」。注意：pokesurvivor.co 等網址是別人架的仿站。",
+    added: "2026-10-19",
+    tw: true,
+    score: 6,
+    scoreDetail: [
+      "台灣媒體 2 家（NOWnews、Yahoo 奇摩新聞）+2",
+      "近 7 天有新報導或討論：NOWnews 10/15、Yahoo 10/14 報導 +2",
+      "Google 搜尋趨勢：這次查詢被暫時擋住，沒有數據，+0",
+      "高互動貼文：Threads @cardesignaaron 8.1K 讚（10/11）+2"
+    ],
+    buzz: "Threads @cardesignaaron 8.1K 讚、1.01 萬分享、91.3 萬瀏覽（10/11）；PTT 搜不到討論；Dcard 有攻略文；itch.io 評分 4.9（8 則）。",
+    threads: {
+      totalShares: 16600,
+      checked: "2026-10-19",
+      posts: [
+        {
+          account: "@cardesignaaron",
+          url: "https://www.threads.com/@cardesignaaron/post/DeYPkSMk27j",
+          date: "10/11",
+          shares: 10100,
+          likes: 8100,
+          views: "91.3 萬"
+        },
+        {
+          account: "@kai_199805",
+          url: "https://www.threads.com/@kai_199805/post/DeYRZGuD-2p",
+          date: "10/11",
+          shares: 5100,
+          likes: 2400,
+          views: "21 萬"
+        },
+        {
+          account: "@game_time_roi",
+          url: "https://www.threads.com/@game_time_roi/post/Debpp6EE5VH",
+          date: "約 10/13",
+          shares: 1400,
+          likes: 1200,
+          views: "14.1 萬"
+        }
+      ]
+    }
+  },
+  {
+    id: "fab24hr",
+    name: "fab24hr 晶圓廠打工人的一天",
+    url: "https://fab24hr.com/",
+    desc: "扮演晶圓廠工程師上一班，處理各種突發狀況；也能跟著一顆晶片從研發走到使用者手上。",
+    genre: "職業模擬",
+    ai: [],
+    aiVerified: true,
+    source: "https://www.gvm.com.tw/article/133824",
+    hot: "台灣獨立開發者 Marcel（Threads @mrclty）作品。遠見雜誌報導為 Threads 上熱門的 AI 協作模擬遊戲。",
+    added: "2026-10-19",
+    tw: true,
+    score: 9,
+    buzz: "Threads 原文 593 讚（10/3）；PTT C_Chat 一篇 53 推；Google 搜尋趨勢有小幅波動（最高 16，以台北 GTA 高峰為 100）。",
+    scoreDetail: [
+      "台灣媒體 5 家（遠見、INSIDE、TVBS、鏈新聞、FTNN）+5",
+      "近 7 天有新報導或討論：遠見 10/16 報導 +2",
+      "高互動貼文：Threads @what.game.play 6.4K 讚（10/8）+2"
+    ],
+    threads: {
+      totalShares: 13189,
+      checked: "2026-10-19",
+      posts: [
+        {
+          account: "@what.game.play",
+          url: "https://www.threads.com/@what.game.play/post/DeOzZ4SidaA",
+          date: "10/8",
+          shares: 12400,
+          likes: 6400,
+          views: "34.7 萬"
+        },
+        {
+          account: "@mrclty（作者）",
+          url: "https://www.threads.com/@mrclty/post/DeEAw_PEaKw",
+          date: "10/3",
+          shares: 731,
+          likes: 593,
+          views: "3.97 萬"
+        },
+        {
+          account: "@aiposthub",
+          url: "https://www.threads.com/@aiposthub/post/DeVzOu6klbr",
+          date: "10/10",
+          shares: 58,
+          likes: 29,
+          views: "4.3K"
+        }
+      ]
+    }
+  },
   {
     id: "1in8b",
     name: "80億分之1",
@@ -37,48 +193,37 @@ window.GAMES = [
       "近 7 天有新報導或討論：ETtoday 10/18 報導、PTT 10/18 仍有討論 +2",
       "高互動貼文：Threads 原文 1.8K 讚（10/5） +2",
       "Google 搜尋趨勢 10/15 起明顯上升 +1"
-    ]
-  },
-  {
-    id: "taipei-gta",
-    name: "臺北 GTA / TAIPEI RUSH 臺北狂飆",
-    url: "https://taipeigta.com/",
-    desc: "台灣開發者把西門町、台北車站、忠孝復興搬進瀏覽器的 3D 開放世界，可以開車騎車亂逛。",
-    genre: "開放世界",
-    ai: [
-      "AICodeWith"
     ],
-    aiVerified: true,
-    source: "https://technews.tw/2026/09/30/taipei-gta/",
-    hot: "9 月底在 Threads 公開後爆紅，科技新報、新頭殼、Yahoo 都有報導。作者說燒了超過 1 萬美元 AI Token；「三天 120 萬人同時在線」未經證實。",
-    added: "2026-10-19",
-    tw: true,
-    score: 9,
-    buzz: "Threads 原始貼文 10.5 萬讚、300 萬瀏覽、11.4 萬分享（9/27）；Google 搜尋趨勢台灣 10/3 達高峰 100；PTT 每篇只有個位數推。",
-    scoreDetail: [
-      "台灣媒體 5 家（科技新報、新頭殼、Yahoo 奇摩新聞、4Gamers、鏈新聞）+5",
-      "近 7 天有新報導或討論：開發者 10/15、10/17 在 Threads 發新地圖仍有數百讚 +2",
-      "高互動貼文：Threads 原文 10.5 萬讚、300 萬瀏覽（9/27） +2"
-    ]
-  },
-  {
-    id: "fab24hr",
-    name: "fab24hr 晶圓廠打工人的一天",
-    url: "https://fab24hr.com/",
-    desc: "扮演晶圓廠工程師上一班，處理各種突發狀況；也能跟著一顆晶片從研發走到使用者手上。",
-    genre: "職業模擬",
-    ai: [],
-    aiVerified: true,
-    source: "https://www.gvm.com.tw/article/133824",
-    hot: "台灣獨立開發者 Marcel（Threads @mrclty）作品。遠見雜誌報導為 Threads 上熱門的 AI 協作模擬遊戲。",
-    added: "2026-10-19",
-    tw: true,
-    score: 7,
-    buzz: "Threads 原文 593 讚（10/3）；PTT C_Chat 一篇 53 推；Google 搜尋趨勢有小幅波動（最高 16，以台北 GTA 高峰為 100）。",
-    scoreDetail: [
-      "台灣媒體 5 家（遠見、INSIDE、TVBS、鏈新聞、FTNN）+5",
-      "近 7 天有新報導或討論：遠見 10/16 報導 +2"
-    ]
+    threads: {
+      totalShares: 2726,
+      checked: "2026-10-19",
+      posts: [
+        {
+          account: "@jins__earth（作者，韓文）",
+          url: "https://www.threads.com/@jins__earth/post/DeG1MpWm4Nd",
+          date: "10/5",
+          shares: 1400,
+          likes: 1800,
+          views: "47.5 萬"
+        },
+        {
+          account: "@kelly_chen0822",
+          url: "https://www.threads.com/@kelly_chen0822/post/DelTsbjCEYC",
+          date: "約 10/17",
+          shares: 1300,
+          likes: 2400,
+          views: "9.16 萬"
+        },
+        {
+          account: "@bonnie__owo_",
+          url: "https://www.threads.com/@bonnie__owo_/post/DehOQ-bk8RP",
+          date: "約 10/15",
+          shares: 26,
+          likes: 37,
+          views: "4.6K"
+        }
+      ]
+    }
   },
   {
     id: "counselor-day",
@@ -99,29 +244,36 @@ window.GAMES = [
     scoreDetail: [
       "台灣媒體 5 家（遠見、鏡週刊、TVBS、造咖、iqmore）+5",
       "近 7 天有新報導或討論：遠見、鏡週刊 10/16 報導 +2"
-    ]
-  },
-  {
-    id: "pokesurvivor",
-    name: "PokéSurvivor 寶可夢倖存者",
-    url: "https://pokesurvivor.com/",
-    desc: "寶可夢版《吸血鬼倖存者》，收錄 966 隻寶可夢，自動攻擊、升級選招式，最多 4 人連線，網頁免費玩。",
-    genre: "類倖存者",
-    ai: [
-      "AI 程式助手"
     ],
-    aiVerified: true,
-    source: "https://www.nownews.com/news/6883368",
-    hot: "國外開發者 jpter78 的同人作品，itch.io 頁面自述「用 AI 程式助手開發（程式碼、原創音樂、部分 UI 圖示），寶可夢圖不是 AI 生成」。10 月中在台灣 Threads 爆紅，被稱為「精神時光屋」。注意：pokesurvivor.co 等網址是別人架的仿站。",
-    added: "2026-10-19",
-    tw: true,
-    score: 4,
-    scoreDetail: [
-      "台灣媒體 2 家（NOWnews、Yahoo 奇摩新聞）+2",
-      "近 7 天有新報導或討論：NOWnews 10/15、Yahoo 10/14 報導 +2",
-      "高互動貼文：沒找到上千讚的 Threads 貼文或 PTT 爆文，+0",
-      "Google 搜尋趨勢：這次查詢被暫時擋住，沒有數據，+0"
-    ],
-    buzz: "Threads 轉分享文多為數十讚以內（例：@wattbrother 11 讚、1.3K 瀏覽）；PTT 搜不到討論；Dcard 有攻略文；itch.io 評分 4.9（8 則）。"
+    threads: {
+      totalShares: 550,
+      checked: "2026-10-19",
+      posts: [
+        {
+          account: "@do_first_zhongli",
+          url: "https://www.threads.com/@do_first_zhongli/post/DeRjFfBnx64",
+          date: "10/9",
+          shares: 475,
+          likes: 509,
+          views: "3.05 萬"
+        },
+        {
+          account: "@yciingh0320",
+          url: "https://www.threads.com/@yciingh0320/post/DeRiQQMk9Nt",
+          date: "10/9",
+          shares: 44,
+          likes: 30,
+          views: "3.7K"
+        },
+        {
+          account: "@janet.readingtheworld",
+          url: "https://www.threads.com/@janet.readingtheworld/post/DeQpg_jFAHa",
+          date: "10/8",
+          shares: 31,
+          likes: 24,
+          views: "2.1K"
+        }
+      ]
+    }
   }
 ];
