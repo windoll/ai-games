@@ -10,19 +10,21 @@
 //   source    資料來源網址（新聞、比賽頁、列表）
 //   hot       熱門原因（新聞、得獎、數據）
 //   added     收錄日期 YYYY-MM-DD
+//   tw        true = 在台灣爆紅（台灣媒體報導、台灣社群瘋傳），或是台灣人做的
 window.LAST_UPDATED = "2026-10-19";
 window.GAMES = [
   {
     id: "taipei-gta",
     name: "臺北 GTA / TAIPEI RUSH 臺北狂飆",
     url: "https://taipeigta.com/",
-    desc: "在台北街頭開車亂跑的瀏覽器 3D 開放世界遊戲，免下載免註冊。",
+    desc: "台灣開發者把西門町、台北車站、忠孝復興搬進瀏覽器的 3D 開放世界，可以開車騎車亂逛。",
     genre: "開放世界",
     ai: ["AICodeWith"],
     aiVerified: true,
-    source: "https://xenospectrum.com/en/taipei-rush-ai-browser-game/",
-    hot: "2026 年 10 月爆紅，宣稱三天 120 萬同時在線（數字未經證實），約花 1 萬美元 AI tokens 製作。",
-    added: "2026-10-19"
+    source: "https://technews.tw/2026/09/30/taipei-gta/",
+    hot: "9 月底在 Threads 公開後爆紅，科技新報、新頭殼、Yahoo 都有報導。作者說燒了超過 1 萬美元 AI Token；「三天 120 萬人同時在線」未經證實。",
+    added: "2026-10-19",
+    tw: true
   },
   {
     id: "1in8b",
@@ -32,9 +34,49 @@ window.GAMES = [
     genre: "人生模擬",
     ai: ["Claude"],
     aiVerified: true,
-    source: "https://1in8b.life/zh/",
-    hot: "官網說明由營運者與 AI（Claude）共同製作。",
-    added: "2026-10-19"
+    source: "https://www.ettoday.net/news/20261018/3256636.htm",
+    hot: "韓國獨立開發者用 AI 約 4 小時做出。繁中版上線後在台灣 Threads 爆紅，ETtoday、中時、NOWnews、數位時代都有報導，網友直呼「投胎在台灣很幸福」。",
+    added: "2026-10-19",
+    tw: true
+  },
+  {
+    id: "fab24hr",
+    name: "fab24hr 晶圓廠打工人的一天",
+    url: "https://fab24hr.com/",
+    desc: "扮演晶圓廠工程師上一班，處理各種突發狀況；也能跟著一顆晶片從研發走到使用者手上。",
+    genre: "職業模擬",
+    ai: [],
+    aiVerified: true,
+    source: "https://www.gvm.com.tw/article/133824",
+    hot: "台灣獨立開發者 Marcel（Threads @mrclty）作品。遠見雜誌報導為 Threads 上熱門的 AI 協作模擬遊戲。",
+    added: "2026-10-19",
+    tw: true
+  },
+  {
+    id: "counselor-day",
+    name: "輔導室：今天也不能倒下",
+    url: "https://claude.ai/artifact/AWwoUVfR7KFTQd7ateyNfb",
+    desc: "扮演國中唯一的專任輔導老師，同時應付學生、老師和家長，還要寫個案紀錄、記得休息。",
+    genre: "職業模擬",
+    ai: ["Claude"],
+    aiVerified: true,
+    source: "https://www.gvm.com.tw/article/133824",
+    hot: "台灣匿名網友用 Claude 做的作品（原名《老師，今天能平安下班嗎？》），在社群爆紅，遠見雜誌報導。",
+    added: "2026-10-19",
+    tw: true
+  },
+  {
+    id: "taiwan-sanbao",
+    name: "台灣三寶模擬器",
+    url: "https://apps.app.charonyu.cc/play/taiwan-sanbao/index.html",
+    desc: "以台灣交通為題材的駕駛遊戲，有「國道模式」和「成為三寶」兩種玩法、四種車可選。",
+    genre: "駕駛",
+    ai: [],
+    aiVerified: true,
+    source: "https://www.gvm.com.tw/article/133824",
+    hot: "台灣網友阿班（Threads @aihub.tw）作品，遠見雜誌列為 Threads 熱門的 AI 協作遊戲。",
+    added: "2026-10-19",
+    tw: true
   },
   {
     id: "pokesurvivor",
