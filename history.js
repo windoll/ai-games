@@ -31,6 +31,30 @@ window.HISTORY = {
       "likes": 33639,
       "score": 9,
       "lastActive": "2026-10-16"
+    },
+    "taiwan-sanbao": {
+      "shares": 4200,
+      "likes": 1900,
+      "score": null,
+      "lastActive": "2026-10-12"
+    },
+    "yakyulife": {
+      "shares": 1702,
+      "likes": 1809,
+      "score": null,
+      "lastActive": "2026-08-11"
+    },
+    "komiya": {
+      "shares": 0,
+      "likes": 0,
+      "score": null,
+      "lastActive": "2026-10-15"
+    },
+    "lingxiuxian": {
+      "shares": 0,
+      "likes": 0,
+      "score": null,
+      "lastActive": "2026-08-25"
     }
   }
 };

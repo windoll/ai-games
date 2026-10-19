@@ -403,6 +403,60 @@ window.GAMES = [
     }
   },
   {
+    id: "yakyulife",
+    tier: "watch",
+    name: "YaKyoLife 棒球人生模擬器",
+    aliases: [
+      "YaKyoLife",
+      "yakyulife",
+      "棒球人生模擬器",
+      "職棒人生模擬器"
+    ],
+    url: "https://leoggcat.github.io/yakyulife/",
+    desc: "文字職棒生涯模擬，從高中打到引退，靠擲骰和選擇決定你是王牌還是板凳。",
+    genre: "人生模擬",
+    ai: [],
+    aiVerified: true,
+    source: "https://abmedia.io/yakyolife-ai-vibe-coding-taiwan",
+    hot: "台灣網友最先生（Threads @mr.themost）用 AI 做的遊戲。鏈新聞：「Vibe Coding 也能做爆款遊戲？網友靠 AI 打造《棒球人生模擬器》爆紅」。8 月中在 Threads、PTT 爆紅，酷時尚、udn 遊戲角落、電腦王阿達也有報導。",
+    missing: "Threads 分享合計 1,700（門檻 5,000）；第 2 個帳號還沒找到 500 分享以上的貼文",
+    added: "2026-10-20",
+    tw: true,
+    lastActive: "2026-08-11",
+    lastActiveNote: "鏈新聞、酷時尚 8/11 報導",
+    origin: null,
+    threads: {
+      totalShares: 1702,
+      checked: "2026-10-20",
+      posts: [
+        {
+          account: "@blue780927",
+          url: "https://www.threads.com/@blue780927/post/Db2fqOmkcCG",
+          date: "8/10",
+          shares: 1700,
+          likes: 1500,
+          views: "10.7 萬"
+        },
+        {
+          account: "@mr.themost（作者）",
+          url: "https://www.threads.com/@mr.themost/post/Db6G1rUjR6_",
+          date: "8/11",
+          shares: 1,
+          likes: 147,
+          views: "1.01 萬"
+        },
+        {
+          account: "@yuhsienyeh",
+          url: "https://www.threads.com/@yuhsienyeh/post/Db524rBgRk4",
+          date: "8/11",
+          shares: 1,
+          likes: 162,
+          views: "1.3 萬"
+        }
+      ]
+    }
+  },
+  {
     id: "komiya",
     tier: "watch",
     name: "取調室的小宮（取調室の小宮）",
@@ -431,6 +485,42 @@ window.GAMES = [
       url: "https://x.com/YujiHorii/status/2109222798287835281",
       date: "2026-10-11",
       stats: "日本媒體報導隔天約 199 萬瀏覽（未自行查看）"
+    },
+    threads: {
+      totalShares: 0,
+      checked: "2026-10-20",
+      posts: []
+    }
+  },
+  {
+    id: "lingxiuxian",
+    tier: "watch",
+    name: "靈劫修仙",
+    aliases: [
+      "靈劫修仙",
+      "網頁靈劫修仙",
+      "lingxiuxian"
+    ],
+    url: "https://lingxiuxian-f5bvckrq.manus.space/",
+    desc: "網頁半掛機修仙養成，玩家可以一起拓展遊戲內容，死亡會重置，還有排行榜。",
+    genre: "放置養成",
+    ai: [
+      "Manus"
+    ],
+    aiVerified: true,
+    source: "https://www.ptt.cc/bbs/Little-Games/M.1787634971.A.170.html",
+    hot: "PTT 網友 sharpwolf 用 Manus AI 做的網頁遊戲，作者自述「透過AI對話實作出來」。8/25 在 PTT Little-Games 板發文後爆文，大量玩家回報 bug、討論玩法。",
+    missing: "沒有找到 Threads 貼文；台灣媒體 0 家（熱度目前集中在 PTT）",
+    added: "2026-10-20",
+    tw: true,
+    lastActive: "2026-08-25",
+    lastActiveNote: "PTT Little-Games 8/25 發文（後續推文持續）",
+    origin: {
+      platform: "PTT",
+      account: "sharpwolf（作者）",
+      url: "https://www.ptt.cc/bbs/Little-Games/M.1787634971.A.170.html",
+      date: "2026-08-25",
+      stats: "約 121 推・0 噓・364 則→（爆文）"
     },
     threads: {
       totalShares: 0,
