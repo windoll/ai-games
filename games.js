@@ -979,5 +979,43 @@ window.GAMES = [
       checked: "2026-10-20",
       posts: []
     }
+  },
+  {
+    id: "pokemon-auto-chess",
+    tier: "watch",
+    lang: "簡中",
+    name: "Pokémon Auto Chess（寶可夢自走棋）",
+    aliases: [
+      "Pokémon Auto Chess",
+      "Pokemon Auto Chess",
+      "寶可夢自走棋",
+      "宝可梦自走棋",
+      "pokemon-auto-chess.com"
+    ],
+    url: "https://pokemon-auto-chess.com/",
+    desc: "寶可夢版的自走棋：組隊、合成進化、搭配屬性羈絆，和其他玩家線上對戰；免費、非營利。",
+    genre: "自走棋",
+    ai: [],
+    aiVerified: false,
+    source: "https://github.com/keldaanCommunity/pokemonAutoChess",
+    hot: "2019 年起由粉絲社群開發的開源同人遊戲（GitHub 1.8K 星，v6.11.2），使用者指定收錄。目前沒有證據是用 AI 製作；遊戲有簡體中文翻譯。",
+    missing: "沒有公開資料說明是用 AI 製作（已知是社群開源專案），也還沒找到華語討論數字（Threads 分享 300 以上、PTT 15 推、媒體報導等任一項）",
+    added: "2026-10-20",
+    tw: true,
+    score: 0,
+    scoreDetail: [
+      "台灣媒體 0 家 +0",
+      "近 7 天沒有找到新報導或討論 +0",
+      "沒有找到高互動貼文 +0"
+    ],
+    buzz: "Threads、PTT、媒體都還沒找到華語討論（2026-10-20）",
+    lastActive: "2026-10-20",
+    lastActiveNote: "收錄日（使用者推薦；遊戲 v6.11.2 持續更新）",
+    origin: null,
+    threads: {
+      totalShares: 0,
+      checked: "2026-10-20",
+      posts: []
+    }
   }
 ];

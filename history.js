@@ -121,6 +121,12 @@ window.HISTORY = {
       "likes": 0,
       "score": 0,
       "lastActive": "2026-10-20"
+    },
+    "pokemon-auto-chess": {
+      "shares": 0,
+      "likes": 0,
+      "score": 0,
+      "lastActive": "2026-10-20"
     }
   }
 };

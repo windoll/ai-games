@@ -46,8 +46,8 @@
 - 台灣爭霸（`taiwan-hegemony`）：N.A.N TW_Studio
 - 封山陰宅（`fengshan-mansion`）
 - Kanto Tactics（`kanto-tactics`）：José Luis，Retro Dodo 有英文報導
+- Pokémon Auto Chess（`pokemon-auto-chess`）：2019 年起的社群開源專案，已知不是 AI 做的，使用者仍指定收錄；只需要更新討論數字
 
-不收：Pokémon Auto Chess（https://pokemon-auto-chess.com/）是 2020 年起的開源同人遊戲，不是 AI 做的。
 
 ## 2. 每款遊戲都要做（新候選和既有遊戲）
 
