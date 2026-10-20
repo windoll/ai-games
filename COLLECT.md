@@ -43,7 +43,7 @@
 下面這幾款是使用者要求先收進觀察中的，還不完全符合收錄規則，所以標成 `aiVerified: false`（網站顯示「AI 未證實」）。
 每天照 2.1～2.5 再查一次：找到公開資料說明是用 AI 製作，就改成 `aiVerified: true` 並補 `ai` 工具；找到貼文或報導就補 `threads`、`buzz`、`score`、`lastActive`，更新 `missing`。
 **這幾款不要因為不符合規則而移除**（使用者指定的）；只有網址失效或確定不是 AI 做的才回報使用者。
-- 霧隱之邸（`midnight-house`）、亂世八城（`luanshi-bacheng`）：言墨遊戲工作室，放在 chatgpt.site（疑似 ChatGPT Sites）
+- 霧隱之邸（`midnight-house`）、亂世八城（`luanshi-bacheng`）：言墨遊戲工作室，作者鍾超己 Threads @w790517102（發文掛「Chatgpt」話題、用 ChatGPT Sites 發佈，已改成 AI 製作）。每天打開作者帳號更新貼文數字
 - 台灣爭霸（`taiwan-hegemony`）：N.A.N TW_Studio
 - 封山陰宅（`fengshan-mansion`）
 - Kanto Tactics（`kanto-tactics`）：José Luis，Retro Dodo 有英文報導

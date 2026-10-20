@@ -610,6 +610,133 @@ window.GAMES = [
     }
   },
   {
+    id: "luanshi-bacheng",
+    lang: "繁中",
+    name: "亂世八城",
+    aliases: [
+      "亂世八城",
+      "同城暗鬥",
+      "言墨遊戲",
+      "鍾超己",
+      "@w790517102",
+      "luanshi-bacheng.oscar-chung.chatgpt.site"
+    ],
+    url: "https://luanshi-bacheng.oscar-chung.chatgpt.site/",
+    desc: "受《富饒之城》啟發的民國權謀網頁桌遊：每輪秘密拉攏一方勢力，興建街區、經營銀元與權勢，報紙事件會影響後續回合。",
+    genre: "桌遊",
+    source: "https://yanmo-games.oscar-chung.chatgpt.site/",
+    hot: "言墨遊戲工作室（作者鍾超己 @w790517102）的作品。作者在 Threads 發文都掛在「Chatgpt」話題下，遊戲也用 ChatGPT Sites 發佈（chatgpt.site）。10/15 首次公開「完成了~」，10/20 發文說加了報紙風波事件、軍閥強化與聊天室。",
+    lastActive: "2026-10-20",
+    lastActiveNote: "作者 Threads 10/20 發文",
+    tier: "watch",
+    aiVerified: true,
+    ai: [
+      "ChatGPT"
+    ],
+    added: "2026-10-20",
+    tw: true,
+    score: 2,
+    origin: {
+      platform: "Threads",
+      account: "@w790517102（作者）",
+      url: "https://www.threads.com/@w790517102/post/DehO2O1E5dd",
+      date: "2026-10-15",
+      stats: "88 分享・74 讚・9 留言・7 轉發・6,394 瀏覽"
+    },
+    missing: "Threads 分享合計 89（觀察中一般門檻 300、排行榜 5,000），目前只有作者自己的貼文",
+    scoreDetail: [
+      "台灣媒體 0 家 +0",
+      "近 7 天有新討論：作者 10/15、10/20 在 Threads 發文 +2",
+      "沒有上千讚的高互動貼文 +0"
+    ],
+    buzz: "Threads 作者原文 88 分享、74 讚、6,394 瀏覽（10/15）；10/20 更新文 1 分享、3 讚、181 瀏覽。PTT、媒體還沒找到討論。",
+    threads: {
+      totalShares: 89,
+      checked: "2026-10-20",
+      posts: [
+        {
+          account: "@w790517102",
+          url: "https://www.threads.com/@w790517102/post/DehO2O1E5dd",
+          date: "10/15",
+          shares: 88,
+          likes: 74,
+          views: "6,394"
+        },
+        {
+          account: "@w790517102",
+          url: "https://www.threads.com/@w790517102/post/Derq6euE8TZ",
+          date: "10/20",
+          shares: 1,
+          likes: 3,
+          views: "181"
+        }
+      ]
+    }
+  },
+  {
+    id: "midnight-house",
+    lang: "繁中",
+    name: "霧隱之邸",
+    aliases: [
+      "霧隱之邸",
+      "言墨遊戲",
+      "鍾超己",
+      "@w790517102",
+      "midnight-house.oscar-chung.chatgpt.site"
+    ],
+    url: "https://midnight-house.oscar-chung.chatgpt.site/",
+    desc: "受《山中小屋》啟發的民國怪談網頁桌遊：探索洋館房間、遭遇徵兆，作祟揭露後改換規則，有單人 AI 補位和多人連線。",
+    genre: "桌遊",
+    source: "https://yanmo-games.oscar-chung.chatgpt.site/",
+    hot: "言墨遊戲工作室（作者鍾超己 @w790517102）的作品，與亂世八城同作者。作者在 Threads 發文都掛在「Chatgpt」話題下，遊戲也用 ChatGPT Sites 發佈（chatgpt.site）。版本公告到 10/20 仍持續新增作祟劇本。",
+    lastActive: "2026-10-20",
+    lastActiveNote: "作者 Threads 10/20 發文、遊戲版本公告 10/20",
+    tier: "watch",
+    aiVerified: true,
+    ai: [
+      "ChatGPT"
+    ],
+    added: "2026-10-20",
+    tw: true,
+    score: 2,
+    origin: {
+      platform: "Threads",
+      account: "@w790517102（作者）",
+      url: "https://www.threads.com/@w790517102/post/DehhtA8E20_",
+      date: "2026-10-16",
+      stats: "1 分享・8 讚・17 留言・599 瀏覽"
+    },
+    missing: "Threads 分享合計 1（觀察中一般門檻 300、排行榜 5,000），目前只有作者自己的貼文",
+    scoreDetail: [
+      "台灣媒體 0 家 +0",
+      "近 7 天有新討論：作者 10/16、10/20 在 Threads 發文 +2",
+      "沒有上千讚的高互動貼文 +0"
+    ],
+    buzz: "Threads 作者貼文：10/16 1 分享、8 讚、17 留言、599 瀏覽；10/20 11 讚、913 瀏覽。PTT、媒體還沒找到討論。",
+    threads: {
+      totalShares: 1,
+      checked: "2026-10-20",
+      posts: [
+        {
+          account: "@w790517102",
+          url: "https://www.threads.com/@w790517102/post/DehhtA8E20_",
+          date: "10/16",
+          shares: 1,
+          likes: 8,
+          views: "599"
+        },
+        {
+          account: "@w790517102",
+          url: "https://www.threads.com/@w790517102/post/DetAPZbINXo",
+          date: "10/20",
+          shares: 0,
+          likes: 11,
+          views: "913"
+        }
+      ]
+    }
+  },
+  {
     id: "lingxiuxian",
     tier: "watch",
     name: "靈劫修仙",
@@ -720,79 +847,6 @@ window.GAMES = [
       date: "2026-10 初",
       stats: "抓不到數字"
     },
-    threads: {
-      totalShares: 0,
-      checked: "2026-10-20",
-      posts: []
-    }
-  },
-  {
-    id: "midnight-house",
-    lang: "繁中",
-    name: "霧隱之邸",
-    aliases: [
-      "霧隱之邸",
-      "言墨遊戲",
-      "midnight-house.oscar-chung.chatgpt.site"
-    ],
-    url: "https://midnight-house.oscar-chung.chatgpt.site/",
-    desc: "受《山中小屋》啟發的民國怪談網頁桌遊：探索洋館房間、遭遇徵兆，作祟揭露後改換規則，有單人 AI 補位和多人連線。",
-    genre: "桌遊",
-    source: "https://yanmo-games.oscar-chung.chatgpt.site/",
-    hot: "言墨遊戲工作室的作品，使用者推薦收錄。遊戲放在 chatgpt.site（疑似 OpenAI 的 ChatGPT Sites），但官網沒有寫明是用 AI 製作。版本公告到 10/20 仍持續新增劇本。",
-    lastActive: "2026-10-20",
-    lastActiveNote: "遊戲版本公告 10/20 新增劇本《義賊廖添丁》",
-    tier: "watch",
-    aiVerified: false,
-    ai: [],
-    added: "2026-10-20",
-    tw: true,
-    score: 0,
-    origin: null,
-    missing: "還沒找到公開資料說明是用 AI 製作（作者自述、遊戲頁面或報導都可以），也還沒找到討論數字（Threads 分享 300 以上、PTT 15 推、媒體報導等任一項）",
-    scoreDetail: [
-      "台灣媒體 0 家 +0",
-      "近 7 天沒有找到新報導或討論 +0",
-      "沒有找到高互動貼文 +0"
-    ],
-    buzz: "Threads、PTT、媒體都還沒找到討論（2026-10-20）",
-    threads: {
-      totalShares: 0,
-      checked: "2026-10-20",
-      posts: []
-    }
-  },
-  {
-    id: "luanshi-bacheng",
-    lang: "繁中",
-    name: "亂世八城",
-    aliases: [
-      "亂世八城",
-      "同城暗鬥",
-      "言墨遊戲",
-      "luanshi-bacheng.oscar-chung.chatgpt.site"
-    ],
-    url: "https://luanshi-bacheng.oscar-chung.chatgpt.site/",
-    desc: "受《富饒之城》啟發的民國權謀網頁桌遊：每輪秘密拉攏一方勢力，興建街區、經營銀元與權勢，報紙事件會影響後續回合。",
-    genre: "桌遊",
-    source: "https://yanmo-games.oscar-chung.chatgpt.site/",
-    hot: "言墨遊戲工作室的作品（與霧隱之邸同作者），使用者推薦收錄。放在 chatgpt.site，官網沒有寫明是用 AI 製作。目前 v0.10.2，已開放教學模式。",
-    lastActive: "2026-10-20",
-    lastActiveNote: "收錄日（使用者推薦；遊戲頁 v0.10.2）",
-    tier: "watch",
-    aiVerified: false,
-    ai: [],
-    added: "2026-10-20",
-    tw: true,
-    score: 0,
-    origin: null,
-    missing: "還沒找到公開資料說明是用 AI 製作（作者自述、遊戲頁面或報導都可以），也還沒找到討論數字（Threads 分享 300 以上、PTT 15 推、媒體報導等任一項）",
-    scoreDetail: [
-      "台灣媒體 0 家 +0",
-      "近 7 天沒有找到新報導或討論 +0",
-      "沒有找到高互動貼文 +0"
-    ],
-    buzz: "Threads、PTT、媒體都還沒找到討論（2026-10-20）",
     threads: {
       totalShares: 0,
       checked: "2026-10-20",

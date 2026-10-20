@@ -62,6 +62,18 @@ window.HISTORY = {
       "score": null,
       "lastActive": "2026-09-15"
     },
+    "luanshi-bacheng": {
+      "shares": 89,
+      "likes": 77,
+      "score": 2,
+      "lastActive": "2026-10-20"
+    },
+    "midnight-house": {
+      "shares": 1,
+      "likes": 19,
+      "score": 2,
+      "lastActive": "2026-10-20"
+    },
     "lingxiuxian": {
       "shares": 0,
       "likes": 0,
@@ -79,18 +91,6 @@ window.HISTORY = {
       "likes": 0,
       "score": null,
       "lastActive": "2026-10-07"
-    },
-    "midnight-house": {
-      "shares": 0,
-      "likes": 0,
-      "score": 0,
-      "lastActive": "2026-10-20"
-    },
-    "luanshi-bacheng": {
-      "shares": 0,
-      "likes": 0,
-      "score": 0,
-      "lastActive": "2026-10-20"
     },
     "taiwan-hegemony": {
       "shares": 0,
