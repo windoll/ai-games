@@ -91,6 +91,36 @@ window.HISTORY = {
       "likes": 0,
       "score": null,
       "lastActive": "2026-10-07"
+    },
+    "midnight-house": {
+      "shares": 0,
+      "likes": 0,
+      "score": 0,
+      "lastActive": "2026-10-20"
+    },
+    "luanshi-bacheng": {
+      "shares": 0,
+      "likes": 0,
+      "score": 0,
+      "lastActive": "2026-10-20"
+    },
+    "taiwan-hegemony": {
+      "shares": 0,
+      "likes": 0,
+      "score": 0,
+      "lastActive": "2026-10-20"
+    },
+    "fengshan-mansion": {
+      "shares": 0,
+      "likes": 0,
+      "score": 0,
+      "lastActive": "2026-10-20"
+    },
+    "kanto-tactics": {
+      "shares": 0,
+      "likes": 0,
+      "score": 0,
+      "lastActive": "2026-10-20"
     }
   }
 };

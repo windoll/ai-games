@@ -798,5 +798,186 @@ window.GAMES = [
       checked: "2026-10-20",
       posts: []
     }
+  },
+  {
+    id: "midnight-house",
+    lang: "繁中",
+    name: "霧隱之邸",
+    aliases: [
+      "霧隱之邸",
+      "言墨遊戲",
+      "midnight-house.oscar-chung.chatgpt.site"
+    ],
+    url: "https://midnight-house.oscar-chung.chatgpt.site/",
+    desc: "受《山中小屋》啟發的民國怪談網頁桌遊：探索洋館房間、遭遇徵兆，作祟揭露後改換規則，有單人 AI 補位和多人連線。",
+    genre: "桌遊",
+    source: "https://yanmo-games.oscar-chung.chatgpt.site/",
+    hot: "言墨遊戲工作室的作品，使用者推薦收錄。遊戲放在 chatgpt.site（疑似 OpenAI 的 ChatGPT Sites），但官網沒有寫明是用 AI 製作。版本公告到 10/20 仍持續新增劇本。",
+    lastActive: "2026-10-20",
+    lastActiveNote: "遊戲版本公告 10/20 新增劇本《義賊廖添丁》",
+    tier: "watch",
+    aiVerified: false,
+    ai: [],
+    added: "2026-10-20",
+    tw: true,
+    score: 0,
+    origin: null,
+    missing: "還沒找到公開資料說明是用 AI 製作（作者自述、遊戲頁面或報導都可以），也還沒找到討論數字（Threads 分享 300 以上、PTT 15 推、媒體報導等任一項）",
+    scoreDetail: [
+      "台灣媒體 0 家 +0",
+      "近 7 天沒有找到新報導或討論 +0",
+      "沒有找到高互動貼文 +0"
+    ],
+    buzz: "Threads、PTT、媒體都還沒找到討論（2026-10-20）",
+    threads: {
+      totalShares: 0,
+      checked: "2026-10-20",
+      posts: []
+    }
+  },
+  {
+    id: "luanshi-bacheng",
+    lang: "繁中",
+    name: "亂世八城",
+    aliases: [
+      "亂世八城",
+      "同城暗鬥",
+      "言墨遊戲",
+      "luanshi-bacheng.oscar-chung.chatgpt.site"
+    ],
+    url: "https://luanshi-bacheng.oscar-chung.chatgpt.site/",
+    desc: "受《富饒之城》啟發的民國權謀網頁桌遊：每輪秘密拉攏一方勢力，興建街區、經營銀元與權勢，報紙事件會影響後續回合。",
+    genre: "桌遊",
+    source: "https://yanmo-games.oscar-chung.chatgpt.site/",
+    hot: "言墨遊戲工作室的作品（與霧隱之邸同作者），使用者推薦收錄。放在 chatgpt.site，官網沒有寫明是用 AI 製作。目前 v0.10.2，已開放教學模式。",
+    lastActive: "2026-10-20",
+    lastActiveNote: "收錄日（使用者推薦；遊戲頁 v0.10.2）",
+    tier: "watch",
+    aiVerified: false,
+    ai: [],
+    added: "2026-10-20",
+    tw: true,
+    score: 0,
+    origin: null,
+    missing: "還沒找到公開資料說明是用 AI 製作（作者自述、遊戲頁面或報導都可以），也還沒找到討論數字（Threads 分享 300 以上、PTT 15 推、媒體報導等任一項）",
+    scoreDetail: [
+      "台灣媒體 0 家 +0",
+      "近 7 天沒有找到新報導或討論 +0",
+      "沒有找到高互動貼文 +0"
+    ],
+    buzz: "Threads、PTT、媒體都還沒找到討論（2026-10-20）",
+    threads: {
+      totalShares: 0,
+      checked: "2026-10-20",
+      posts: []
+    }
+  },
+  {
+    id: "taiwan-hegemony",
+    lang: "繁中",
+    name: "台灣爭霸",
+    aliases: [
+      "台灣爭霸",
+      "N.A.N TW_Studio",
+      "nan-game01.chillchatnow.com"
+    ],
+    url: "https://nan-game01.chillchatnow.com/",
+    desc: "以台灣鄉鎮、縣市為地圖的多人線上戰略遊戲（Beta），要註冊帳號遊玩，有戰報和聊天。",
+    genre: "戰略",
+    source: "https://nan-game01.chillchatnow.com/",
+    hot: "N.A.N TW_Studio 的作品，使用者推薦收錄。官網沒有寫明是用 AI 製作。",
+    lastActive: "2026-10-20",
+    lastActiveNote: "收錄日（使用者推薦，還沒找到貼文或報導）",
+    tier: "watch",
+    aiVerified: false,
+    ai: [],
+    added: "2026-10-20",
+    tw: true,
+    score: 0,
+    origin: null,
+    missing: "還沒找到公開資料說明是用 AI 製作（作者自述、遊戲頁面或報導都可以），也還沒找到討論數字（Threads 分享 300 以上、PTT 15 推、媒體報導等任一項）",
+    scoreDetail: [
+      "台灣媒體 0 家 +0",
+      "近 7 天沒有找到新報導或討論 +0",
+      "沒有找到高互動貼文 +0"
+    ],
+    buzz: "Threads、PTT、媒體都還沒找到討論（2026-10-20）",
+    threads: {
+      totalShares: 0,
+      checked: "2026-10-20",
+      posts: []
+    }
+  },
+  {
+    id: "fengshan-mansion",
+    lang: "繁中",
+    name: "封山陰宅",
+    aliases: [
+      "封山陰宅",
+      "Betrayal at the Sealed Mansion",
+      "fengshan.paromi7777.workers.dev"
+    ],
+    url: "https://fengshan.paromi7777.workers.dev/",
+    desc: "中式民俗恐怖桌遊的 Three.js 3D 網頁版，探索陰宅，有冥婚結陰親、紙人替身術、殭屍破棺出三個劇本。",
+    genre: "桌遊",
+    source: "https://fengshan.paromi7777.workers.dev/",
+    hot: "使用者推薦收錄。官網沒有寫明是用 AI 製作；版本 v1.1.0，10/20 仍有更新。",
+    lastActive: "2026-10-20",
+    lastActiveNote: "遊戲頁 build 2026-10-20",
+    tier: "watch",
+    aiVerified: false,
+    ai: [],
+    added: "2026-10-20",
+    tw: true,
+    score: 0,
+    origin: null,
+    missing: "還沒找到公開資料說明是用 AI 製作（作者自述、遊戲頁面或報導都可以），也還沒找到討論數字（Threads 分享 300 以上、PTT 15 推、媒體報導等任一項）",
+    scoreDetail: [
+      "台灣媒體 0 家 +0",
+      "近 7 天沒有找到新報導或討論 +0",
+      "沒有找到高互動貼文 +0"
+    ],
+    buzz: "Threads、PTT、媒體都還沒找到討論（2026-10-20）",
+    threads: {
+      totalShares: 0,
+      checked: "2026-10-20",
+      posts: []
+    }
+  },
+  {
+    id: "kanto-tactics",
+    lang: "簡中",
+    name: "Kanto Tactics",
+    aliases: [
+      "Kanto Tactics",
+      "關都戰術",
+      "einoow"
+    ],
+    url: "https://einoow.com/kanto-tactics",
+    desc: "寶可夢自走棋：組隊搭配屬性、進化寶可夢，從八大道館一路打到四天王。",
+    genre: "自走棋",
+    source: "https://retrododo.com/kanto-tactics-combines-pokemon-with-teamfight-tactics-gameplay/",
+    hot: "José Luis 做的寶可夢同人網頁遊戲，Retro Dodo 有英文報導（沒有提到 AI），使用者推薦收錄。",
+    lastActive: "2026-10-20",
+    lastActiveNote: "收錄日（使用者推薦，還沒找到華語貼文或報導）",
+    tier: "watch",
+    aiVerified: false,
+    ai: [],
+    added: "2026-10-20",
+    tw: true,
+    score: 0,
+    origin: null,
+    missing: "還沒找到公開資料說明是用 AI 製作（作者自述、遊戲頁面或報導都可以），也還沒找到討論數字（Threads 分享 300 以上、PTT 15 推、媒體報導等任一項）",
+    scoreDetail: [
+      "台灣媒體 0 家 +0",
+      "近 7 天沒有找到新報導或討論 +0",
+      "沒有找到高互動貼文 +0"
+    ],
+    buzz: "Threads、PTT、媒體都還沒找到討論（2026-10-20）",
+    threads: {
+      totalShares: 0,
+      checked: "2026-10-20",
+      posts: []
+    }
   }
 ];

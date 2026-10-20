@@ -38,15 +38,14 @@
 - 也直接搜 Threads 上爆紅的遊戲貼文（不必等新聞）：`site:threads.com 遊戲 爆紅`、`site:threads.com claude.ai/artifact`、`site:threads.com 模擬器 網頁`
 - 同一款遊戲常有好幾個名字（例：「校事會議模擬器」和「今天也要平安下班」是同一款）。用網址比對，同網址就是同一款，名稱都記進 `aliases`。
 
-### 待查候選（使用者推薦，還沒收錄）
-每天都要再查一次下面這幾款；符合收錄規則就照第 2、3 節加進 `games.js`，加進去後從這份清單刪掉。
-| 遊戲 | 網址 | 還差什麼（2026-10-20 檢查） |
-|---|---|---|
-| 霧隱之邸（山中小屋類網頁桌遊，言墨遊戲工作室） | https://midnight-house.oscar-chung.chatgpt.site/ | 有繁中。放在 chatgpt.site（疑似 ChatGPT Sites），但沒找到明確說是 AI 做的來源；也沒找到討論數字 |
-| 亂世八城（富饒之城類網頁桌遊，同作者） | https://luanshi-bacheng.oscar-chung.chatgpt.site/ | 同上 |
-| 台灣爭霸（N.A.N TW_Studio，多人戰略） | https://nan-game01.chillchatnow.com/ | 有繁中；沒找到 AI 製作來源和討論數字 |
-| 封山陰宅（中式民俗恐怖桌遊，Three.js 3D） | https://fengshan.paromi7777.workers.dev/ | 有繁中；沒找到 AI 製作來源和討論數字 |
-| Kanto Tactics（寶可夢自走棋，José Luis） | https://einoow.com/kanto-tactics | 有簡中；Retro Dodo 有英文報導但沒提 AI；沒找到華語討論 |
+### 使用者指定收錄（AI 未證實）
+下面這幾款是使用者要求先收進觀察中的，還不完全符合收錄規則，所以標成 `aiVerified: false`（網站顯示「AI 未證實」）。
+每天照 2.1～2.5 再查一次：找到公開資料說明是用 AI 製作，就改成 `aiVerified: true` 並補 `ai` 工具；找到貼文或報導就補 `threads`、`buzz`、`score`、`lastActive`，更新 `missing`。
+**這幾款不要因為不符合規則而移除**（使用者指定的）；只有網址失效或確定不是 AI 做的才回報使用者。
+- 霧隱之邸（`midnight-house`）、亂世八城（`luanshi-bacheng`）：言墨遊戲工作室，放在 chatgpt.site（疑似 ChatGPT Sites）
+- 台灣爭霸（`taiwan-hegemony`）：N.A.N TW_Studio
+- 封山陰宅（`fengshan-mansion`）
+- Kanto Tactics（`kanto-tactics`）：José Luis，Retro Dodo 有英文報導
 
 不收：Pokémon Auto Chess（https://pokemon-auto-chess.com/）是 2020 年起的開源同人遊戲，不是 AI 做的。
 
