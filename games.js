@@ -1,6 +1,7 @@
 // AI 遊戲收錄資料。定期收集排程會在這個陣列「新增」項目，不會刪除舊的。
 // 欄位：
 //   id        唯一代號（小寫英數與連字號）
+//   lang      遊戲官方支援的中文：繁中／簡中／繁簡（沒有中文的遊戲不收）
 //   tier      main = 主榜（達到收錄門檻）；watch = 觀察中（有 AI 證據和一些熱度，還沒達門檻）
 //   missing   觀察中的遊戲還差什麼（例：Threads 分享合計 4,200，門檻 5,000）
 //   aliases   這款遊戲的所有名稱、別名、網址關鍵字，每次搜尋都要全部用上
@@ -92,7 +93,8 @@ window.GAMES = [
     ],
     lastActive: "2026-10-17",
     lastActiveNote: "作者 10/17 在 Threads 發倫敦版",
-    tier: "main"
+    tier: "main",
+    lang: "繁中"
   },
   {
     id: "pokesurvivor",
@@ -162,7 +164,8 @@ window.GAMES = [
     ],
     lastActive: "2026-10-15",
     lastActiveNote: "NOWnews 10/15 報導",
-    tier: "main"
+    tier: "main",
+    lang: "繁中"
   },
   {
     id: "fab24hr",
@@ -228,7 +231,8 @@ window.GAMES = [
     ],
     lastActive: "2026-10-16",
     lastActiveNote: "遠見 10/16 報導",
-    tier: "main"
+    tier: "main",
+    lang: "繁中"
   },
   {
     id: "1in8b",
@@ -299,7 +303,8 @@ window.GAMES = [
     ],
     lastActive: "2026-10-18",
     lastActiveNote: "ETtoday 10/18 報導、PTT 10/18 討論",
-    tier: "main"
+    tier: "main",
+    lang: "繁中"
   },
   {
     id: "safe-off-work",
@@ -363,7 +368,8 @@ window.GAMES = [
     ],
     lastActive: "2026-10-16",
     lastActiveNote: "遠見、鏡週刊 10/16 報導",
-    tier: "main"
+    tier: "main",
+    lang: "繁中"
   },
   {
     id: "taiwan-sanbao",
@@ -400,7 +406,8 @@ window.GAMES = [
           views: "16.5 萬"
         }
       ]
-    }
+    },
+    lang: "繁中"
   },
   {
     id: "yakyulife",
@@ -454,42 +461,103 @@ window.GAMES = [
           views: "1.3 萬"
         }
       ]
+    },
+    lang: "繁中"
+  },
+  {
+    id: "ilove-oncall",
+    tier: "watch",
+    lang: "繁中",
+    name: "我熱愛值班",
+    aliases: [
+      "我熱愛值班",
+      "醫院夜班值班模擬",
+      "ilove-oncall",
+      "drcharming"
+    ],
+    url: "https://drcharming.net/game",
+    desc: "獨自負責一整層病房，從下午 5 點值到隔天早上 8 點：接電話、判斷要不要到床邊、還要記得吃飯睡覺。",
+    genre: "職業模擬",
+    ai: [
+      "AI 護理師"
+    ],
+    aiVerified: true,
+    source: "https://drcharming.net/game",
+    hot: "台灣住院醫師做的醫院夜班模擬遊戲，官網寫「大部分案件由 AI 設計、回覆由 AI 生成」；Pro 版可以自由下醫囑，由 AI 護理師回應。10/20 被 Threads 遊戲推薦帳號 @what.game.play 介紹後開始擴散。",
+    missing: "Threads 分享合計 1,000（門檻 5,000）；第 2 個帳號還沒找到 500 分享以上的貼文",
+    added: "2026-10-20",
+    tw: true,
+    lastActive: "2026-10-20",
+    lastActiveNote: "Threads @what.game.play 10/20 介紹",
+    origin: null,
+    threads: {
+      totalShares: 1115,
+      checked: "2026-10-20",
+      posts: [
+        {
+          account: "@what.game.play",
+          url: "https://www.threads.com/@what.game.play/post/DerMoVyD07F",
+          date: "10/20",
+          shares: 1000,
+          likes: 575,
+          views: "3.27 萬"
+        },
+        {
+          account: "@what.game.play",
+          url: "https://www.threads.com/@what.game.play/post/DerMx8Gk_0g",
+          date: "10/20",
+          shares: 115,
+          likes: 14,
+          views: "看不到"
+        }
+      ]
     }
   },
   {
-    id: "komiya",
+    id: "cms-7",
     tier: "watch",
-    name: "取調室的小宮（取調室の小宮）",
+    lang: "繁中",
+    name: "CMS-7（ARG 網頁解謎）",
     aliases: [
-      "取調室的小宮",
-      "取調室の小宮",
-      "堀井雄二 AI 遊戲"
+      "CMS-7",
+      "CMS7",
+      "arg-game",
+      "ARG 網頁解謎 警員"
     ],
-    url: "https://claude.ai/artifact/HgsUQQywVPG8X87dp1NWHu",
-    desc: "扮演刑警偵訊 72 歲的前鎖匠小宮，找出供述和證據的矛盾，逼近當鋪金庫失竊案的真相。",
-    genre: "推理",
+    url: "https://imorintani0611.github.io/arg-game/start.html",
+    desc: "扮演台北市警局的菜鳥警員，在網頁裡一步步解開案件的 ARG 解謎遊戲；不用看原始碼、沒有驚嚇橋段，手機也能玩。",
+    genre: "解謎",
     ai: [
       "Claude"
     ],
     aiVerified: true,
-    source: "https://www.cna.com.tw/business/chinese/447040",
-    hot: "《勇者鬥惡龍》之父堀井雄二 10/11 公開，中央社：「利用AI工具Claude，花了大約30分鐘」完成。主要在日本爆紅，台灣有中央社、動區報導。",
-    missing: "台灣 Threads 上還沒找到分享 500 以上的貼文",
+    source: "https://www.threads.com/@fu0m6xx/post/DdT5J93Er_M",
+    hot: "作者在 Threads 自述「我用Claude和GitHub把故事變成這個形式」。9/15 發文後在喜歡 ARG、網頁解謎的玩家間流傳。",
+    missing: "Threads 分享 720（門檻 5,000）；還沒有其他帳號的熱門貼文",
     added: "2026-10-20",
     tw: true,
-    lastActive: "2026-10-15",
-    lastActiveNote: "中央社 10/15 報導",
+    lastActive: "2026-09-15",
+    lastActiveNote: "作者 9/15 Threads 發文",
     origin: {
-      platform: "X",
-      account: "@YujiHorii（作者）",
-      url: "https://x.com/YujiHorii/status/2109222798287835281",
-      date: "2026-10-11",
-      stats: "日本媒體報導隔天約 199 萬瀏覽（未自行查看）"
+      platform: "Threads",
+      account: "@fu0m6xx（作者）",
+      url: "https://www.threads.com/@fu0m6xx/post/DdT5J93Er_M",
+      date: "2026-09-15",
+      stats: "720 分享・422 讚・2.81 萬瀏覽"
     },
     threads: {
-      totalShares: 0,
+      totalShares: 720,
       checked: "2026-10-20",
-      posts: []
+      posts: [
+        {
+          account: "@fu0m6xx（作者）",
+          url: "https://www.threads.com/@fu0m6xx/post/DdT5J93Er_M",
+          date: "9/15",
+          shares: 720,
+          likes: 422,
+          views: "2.81 萬"
+        }
+      ]
     }
   },
   {
@@ -526,6 +594,7 @@ window.GAMES = [
       totalShares: 0,
       checked: "2026-10-20",
       posts: []
-    }
+    },
+    lang: "繁中"
   }
 ];

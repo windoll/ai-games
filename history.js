@@ -44,11 +44,17 @@ window.HISTORY = {
       "score": null,
       "lastActive": "2026-08-11"
     },
-    "komiya": {
-      "shares": 0,
-      "likes": 0,
+    "ilove-oncall": {
+      "shares": 1115,
+      "likes": 589,
       "score": null,
-      "lastActive": "2026-10-15"
+      "lastActive": "2026-10-20"
+    },
+    "cms-7": {
+      "shares": 720,
+      "likes": 422,
+      "score": null,
+      "lastActive": "2026-09-15"
     },
     "lingxiuxian": {
       "shares": 0,
