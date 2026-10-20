@@ -44,6 +44,18 @@ window.HISTORY = {
       "score": null,
       "lastActive": "2026-10-12"
     },
+    "spiritual-root": {
+      "shares": 3251,
+      "likes": 1980,
+      "score": 2,
+      "lastActive": "2026-10-07"
+    },
+    "guiyue-30": {
+      "shares": 2144,
+      "likes": 1371,
+      "score": 4,
+      "lastActive": "2026-10-20"
+    },
     "yakyulife": {
       "shares": 1702,
       "likes": 1809,

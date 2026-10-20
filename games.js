@@ -459,6 +459,132 @@ window.GAMES = [
     lang: "繁中"
   },
   {
+    id: "spiritual-root",
+    lang: "繁中",
+    name: "測靈根｜青雲仙緣",
+    aliases: [
+      "測靈根｜青雲仙緣",
+      "測靈根小遊戲",
+      "青雲仙緣",
+      "測靈根",
+      "armiyashi86",
+      "@artmis_show00"
+    ],
+    url: "https://armiyashi86.itch.io/spiritual-root",
+    desc: "修仙題材的測靈根小遊戲：用姓名三才五格的五行屬性算出你的靈根（單靈根到多靈根、下品到仙品），可以隱藏生辰八字。",
+    genre: "測驗",
+    source: "https://www.threads.com/@artmis_show00/post/DeHf7_vmfg2",
+    hot: "作者 @artmis_show00（亞提）10/5 在 Threads 分享，2,524 分享、23 萬瀏覽，留言區大家比誰是仙品靈根。itch.io 頁面的 AI 揭露寫「AI Assisted：Code、Graphics、Sounds、Text」。",
+    lastActive: "2026-10-07",
+    lastActiveNote: "作者 Threads 10/7 回覆（加了隱藏八字功能）",
+    tier: "watch",
+    aiVerified: true,
+    ai: [
+      "AI 輔助（itch.io 揭露，未寫工具）"
+    ],
+    added: "2026-10-20",
+    tw: true,
+    score: 2,
+    origin: {
+      platform: "Threads",
+      account: "@artmis_show00（作者）",
+      url: "https://www.threads.com/@artmis_show00/post/DeHf7_vmfg2",
+      date: "2026-10-05",
+      stats: "2,524 分享・1,786 讚・620 留言・128 轉發・23 萬瀏覽"
+    },
+    missing: "Threads 分享合計 3,251（排行榜要 5,000，且要 2 個帳號各 500 分享以上，目前只有作者自己的貼文）",
+    scoreDetail: [
+      "台灣媒體 0 家 +0",
+      "最近 7 天沒有新討論 +0",
+      "Threads 上千讚貼文：作者原文 1,786 讚 +2"
+    ],
+    buzz: "Threads 作者原文 2,524 分享、1,786 讚、620 留言、23 萬瀏覽（10/5）；附連結的第 2 篇 727 分享、194 讚。PTT、媒體還沒找到討論。",
+    threads: {
+      totalShares: 3251,
+      checked: "2026-10-20",
+      posts: [
+        {
+          account: "@artmis_show00",
+          url: "https://www.threads.com/@artmis_show00/post/DeHf7_vmfg2",
+          date: "10/5",
+          shares: 2524,
+          likes: 1786,
+          views: "23 萬"
+        },
+        {
+          account: "@artmis_show00",
+          url: "https://www.threads.com/@artmis_show00/post/DeHf-mhGfvm",
+          date: "10/5",
+          shares: 727,
+          likes: 194,
+          views: "看不到"
+        }
+      ]
+    }
+  },
+  {
+    id: "guiyue-30",
+    lang: "繁中",
+    name: "鬼月三十日",
+    aliases: [
+      "鬼月三十日",
+      "鬼月求生30天",
+      "guiyue30",
+      "@scottjyun"
+    ],
+    url: "https://z101310132007.itch.io/guiyue30",
+    desc: "以台灣鄉野與都市傳說為主題的農曆七月文字冒險：主角要撐過鬼月三十天，每天的選擇會觸犯或避開禁忌，有多條路線和音效。",
+    genre: "文字冒險",
+    source: "https://claude.ai/artifact/RXCTyMoter4Xaabacq8gd6",
+    hot: "作者 @scottjyun 10/19 在 Threads 分享 claude.ai artifact 版，一天內破 2,000 分享；10/20 另外放上 itch.io 網頁版給沒有 AI 帳號的人玩。itch.io 頁面的 AI 揭露寫「AI Assisted：Code、Text」。",
+    lastActive: "2026-10-20",
+    lastActiveNote: "作者 Threads 10/20 發文（itch.io 網頁版）",
+    tier: "watch",
+    aiVerified: true,
+    ai: [
+      "Claude"
+    ],
+    added: "2026-10-20",
+    tw: true,
+    score: 4,
+    origin: {
+      platform: "Threads",
+      account: "@scottjyun（作者）",
+      url: "https://www.threads.com/@scottjyun/post/DerhyH2AYTY",
+      date: "2026-10-19",
+      stats: "2,144 分享・1,371 讚・80 留言・295 轉發"
+    },
+    missing: "Threads 分享合計 2,144（排行榜要 5,000，且要 2 個帳號各 500 分享以上，目前只有作者原文）",
+    scoreDetail: [
+      "台灣媒體 0 家 +0",
+      "近 7 天有新討論：作者 10/19、10/20 發文 +2",
+      "Threads 上千讚貼文：作者原文 1,371 讚 +2"
+    ],
+    buzz: "Threads 作者原文 2,144 分享、1,371 讚、80 留言（10/19，發文約一天）。PTT、媒體還沒找到討論。",
+    threads: {
+      totalShares: 2144,
+      checked: "2026-10-20",
+      posts: [
+        {
+          account: "@scottjyun",
+          url: "https://www.threads.com/@scottjyun/post/DerhyH2AYTY",
+          date: "10/19",
+          shares: 2144,
+          likes: 1371,
+          views: "看不到"
+        },
+        {
+          account: "@scottjyun",
+          url: "https://www.threads.com/@scottjyun/post/Det_WxDgZTV",
+          date: "10/20",
+          shares: 0,
+          likes: 0,
+          views: "看不到"
+        }
+      ]
+    }
+  },
+  {
     id: "yakyulife",
     tier: "watch",
     name: "YaKyoLife 棒球人生模擬器",
