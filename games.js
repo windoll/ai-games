@@ -647,47 +647,6 @@ window.GAMES = [
     lang: "繁中"
   },
   {
-    id: "wuxia-survivors",
-    tier: "watch",
-    lang: "簡中",
-    name: "群俠傳：倖存者（群侠传：幸存者）",
-    aliases: [
-      "群俠傳：倖存者",
-      "群侠传：幸存者",
-      "群侠传幸存者",
-      "Wuxia Survivors",
-      "Nenly同学"
-    ],
-    url: "https://store.steampowered.com/app/4957110",
-    region: "中國",
-    desc: "武俠版倖存者類動作肉鴿，扮演江湖俠客割草升級，Steam 搶先體驗、免費。",
-    genre: "類倖存者",
-    ai: [
-      "AI 程式助手",
-      "AI 美術"
-    ],
-    aiVerified: true,
-    source: "https://store.steampowered.com/app/4957110",
-    hot: "中國 B 站 UP 主「Nenly同學」零經驗、一個人花三個月做出來，Steam 頁面揭露程式碼部分由 AI 工具協助撰寫，部分美術、動畫、音樂也用 AI 製作。8/11 上架後 Steam「壓倒性好評」，觸樂、遊民星空、17173 都有報導。",
-    missing: "沒有台灣或香港 Threads 貼文數據；熱度集中在 Steam 和 B 站（Steam 1,921 則評價 96% 好評，B 站開發影片 10 萬播放）",
-    added: "2026-10-20",
-    tw: true,
-    lastActive: "2026-10-20",
-    lastActiveNote: "Steam 近 30 天 666 則新評價（98% 好評）",
-    origin: {
-      platform: "Bilibili",
-      account: "Nenly同學（作者）",
-      url: "https://www.bilibili.com/video/BV1MPMd64EiD",
-      date: "2026-08-03",
-      stats: "10 萬播放・約 4,141 讚（子代理查到，未自行查看）"
-    },
-    threads: {
-      totalShares: 0,
-      checked: "2026-10-20",
-      posts: []
-    }
-  },
-  {
     id: "yueyang-tower",
     tier: "watch",
     lang: "繁中",
@@ -721,38 +680,6 @@ window.GAMES = [
       date: "2026-10-04 前後",
       stats: "unwire 截圖：約 1.14 萬讚・564 轉發・9,800 分享（原帖需登入，未自行查看）"
     },
-    threads: {
-      totalShares: 0,
-      checked: "2026-10-20",
-      posts: []
-    }
-  },
-  {
-    id: "chongzhen-zhipin",
-    tier: "watch",
-    lang: "簡中",
-    name: "崇禎直聘：明末官場沉浮模擬器",
-    aliases: [
-      "崇禎直聘",
-      "崇祯直聘",
-      "明末官场沉浮模拟器"
-    ],
-    url: "https://www.taptap.cn/app/837252",
-    region: "中國",
-    desc: "扮演崇禎年間的七品縣官，在國庫空虛、上司施壓、流寇四起之間求生的官場模擬。",
-    genre: "策略模擬",
-    ai: [
-      "AI 輔助文本與美術"
-    ],
-    aiVerified: true,
-    source: "https://www.taptap.cn/app/837252",
-    hot: "中國獨立開發者作品，TapTap 頁面寫明「部分文本在創作過程中使用了人工智能工具進行輔助潤色與表意優化，遊戲內立繪、音樂亦獲得了相關人工智能工具的技術輔助」。TapTap 9.6 分、4,662 則評價、約 48 萬關注，遊戲陀螺列為熱門前十。",
-    missing: "沒有台灣或香港 Threads 貼文數據；熱度集中在中國 TapTap",
-    added: "2026-10-20",
-    tw: true,
-    lastActive: "2026-09-11",
-    lastActiveNote: "遊戲陀螺 9/11 報導",
-    origin: null,
     threads: {
       totalShares: 0,
       checked: "2026-10-20",

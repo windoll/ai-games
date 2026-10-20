@@ -68,23 +68,11 @@ window.HISTORY = {
       "score": null,
       "lastActive": "2026-08-25"
     },
-    "wuxia-survivors": {
-      "shares": 0,
-      "likes": 0,
-      "score": null,
-      "lastActive": "2026-10-20"
-    },
     "yueyang-tower": {
       "shares": 0,
       "likes": 0,
       "score": null,
       "lastActive": "2026-10-19"
-    },
-    "chongzhen-zhipin": {
-      "shares": 0,
-      "likes": 0,
-      "score": null,
-      "lastActive": "2026-09-11"
     },
     "mongkok-story": {
       "shares": 0,
