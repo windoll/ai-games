@@ -38,6 +38,18 @@
 - 也直接搜 Threads 上爆紅的遊戲貼文（不必等新聞）：`site:threads.com 遊戲 爆紅`、`site:threads.com claude.ai/artifact`、`site:threads.com 模擬器 網頁`
 - 同一款遊戲常有好幾個名字（例：「校事會議模擬器」和「今天也要平安下班」是同一款）。用網址比對，同網址就是同一款，名稱都記進 `aliases`。
 
+### 待查候選（使用者推薦，還沒收錄）
+每天都要再查一次下面這幾款；符合收錄規則就照第 2、3 節加進 `games.js`，加進去後從這份清單刪掉。
+| 遊戲 | 網址 | 還差什麼（2026-10-20 檢查） |
+|---|---|---|
+| 霧隱之邸（山中小屋類網頁桌遊，言墨遊戲工作室） | https://midnight-house.oscar-chung.chatgpt.site/ | 有繁中。放在 chatgpt.site（疑似 ChatGPT Sites），但沒找到明確說是 AI 做的來源；也沒找到討論數字 |
+| 亂世八城（富饒之城類網頁桌遊，同作者） | https://luanshi-bacheng.oscar-chung.chatgpt.site/ | 同上 |
+| 台灣爭霸（N.A.N TW_Studio，多人戰略） | https://nan-game01.chillchatnow.com/ | 有繁中；沒找到 AI 製作來源和討論數字 |
+| 封山陰宅（中式民俗恐怖桌遊，Three.js 3D） | https://fengshan.paromi7777.workers.dev/ | 有繁中；沒找到 AI 製作來源和討論數字 |
+| Kanto Tactics（寶可夢自走棋，José Luis） | https://einoow.com/kanto-tactics | 有簡中；Retro Dodo 有英文報導但沒提 AI；沒找到華語討論 |
+
+不收：Pokémon Auto Chess（https://pokemon-auto-chess.com/）是 2020 年起的開源同人遊戲，不是 AI 做的。
+
 ## 2. 每款遊戲都要做（新候選和既有遊戲）
 
 ### 2.1 用所有名稱搜尋
