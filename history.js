@@ -32,6 +32,12 @@ window.HISTORY = {
       "score": 9,
       "lastActive": "2026-10-16"
     },
+    "name-beyblade": {
+      "shares": 11300,
+      "likes": 11300,
+      "score": 4,
+      "lastActive": "2026-09-30"
+    },
     "taiwan-sanbao": {
       "shares": 4200,
       "likes": 1900,
@@ -45,8 +51,8 @@ window.HISTORY = {
       "lastActive": "2026-08-11"
     },
     "ilove-oncall": {
-      "shares": 1115,
-      "likes": 589,
+      "shares": 1264,
+      "likes": 627,
       "score": null,
       "lastActive": "2026-10-20"
     },

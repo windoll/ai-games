@@ -267,7 +267,7 @@ window.GAMES = [
           date: "約 10/16",
           shares: 9900,
           likes: 10300,
-          views: "46.3 萬"
+          views: "46.4 萬"
         },
         {
           account: "@jins__earth（作者，韓文）",
@@ -283,7 +283,7 @@ window.GAMES = [
           date: "約 10/17",
           shares: 1300,
           likes: 2400,
-          views: "9.16 萬"
+          views: "9.19 萬"
         }
       ]
     },
@@ -371,6 +371,54 @@ window.GAMES = [
     lastActiveNote: "遠見、鏡週刊 10/16 報導",
     tier: "main",
     lang: "繁中"
+  },
+  {
+    id: "name-beyblade",
+    tier: "watch",
+    lang: "繁中",
+    name: "姓名戰鬥陀螺",
+    aliases: [
+      "姓名戰鬥陀螺",
+      "姓名陀螺",
+      "名字戰鬥陀螺",
+      "lpm1.live"
+    ],
+    url: "https://claude.ai/public/artifacts/03e01152-3e72-4920-9999-ee2e75e37eb1",
+    desc: "輸入名字，每個中文字變成一顆戰鬥陀螺互相碰撞，三字三戰、先拿兩勝的名字最強；也有單字一對一模式。",
+    genre: "對戰",
+    ai: [
+      "Claude"
+    ],
+    aiVerified: true,
+    source: "https://www.4gamers.com.tw/news/detail/80099/word-game-name-battle-spinning-top-funny-beyblade",
+    hot: "《文字遊戲》總製作人張文韋用 Claude 做的 claude.ai Artifact 小遊戲。漫畫家薪鹽 6/16 在 Threads 發文「男友用 AI 做了一個用名字打架的戰鬥陀螺遊戲」，趁戰鬥陀螺缺貨熱潮爆紅；4Gamers（6/17）、NOWnews（9/30）報導。另有 lpm1.live 版本（NOWnews 引用）。",
+    missing: "Threads 分享合計 11,300 已過 5,000，但只有 1 個帳號；第 2 個帳號還沒找到 500 分享以上的貼文",
+    added: "2026-10-20",
+    tw: true,
+    score: 4,
+    scoreDetail: [
+      "台灣媒體 2 家（4Gamers、NOWnews）+2",
+      "近 7 天沒有新報導或討論 +0",
+      "高互動貼文：Threads @shinyan_dungeon 11.3K 讚、11.3K 分享（6/16）+2"
+    ],
+    buzz: "Threads @shinyan_dungeon 11.3K 讚、11.3K 分享、65.5 萬瀏覽（6/16）；PTT 搜不到討論。",
+    lastActive: "2026-09-30",
+    lastActiveNote: "NOWnews 9/30 報導",
+    origin: null,
+    threads: {
+      totalShares: 11300,
+      checked: "2026-10-20",
+      posts: [
+        {
+          account: "@shinyan_dungeon",
+          url: "https://www.threads.com/@shinyan_dungeon/post/DZo2HOkiREk",
+          date: "6/16",
+          shares: 11300,
+          likes: 11300,
+          views: "65.5 萬"
+        }
+      ]
+    }
   },
   {
     id: "taiwan-sanbao",
@@ -485,30 +533,30 @@ window.GAMES = [
     aiVerified: true,
     source: "https://drcharming.net/game",
     hot: "台灣住院醫師做的醫院夜班模擬遊戲，官網寫「大部分案件由 AI 設計、回覆由 AI 生成」；Pro 版可以自由下醫囑，由 AI 護理師回應。10/20 被 Threads 遊戲推薦帳號 @what.game.play 介紹後開始擴散。",
-    missing: "Threads 分享合計 1,000（門檻 5,000）；第 2 個帳號還沒找到 500 分享以上的貼文",
+    missing: "Threads 分享合計 1,264（門檻 5,000）；第 2 個帳號還沒找到 500 分享以上的貼文",
     added: "2026-10-20",
     tw: true,
     lastActive: "2026-10-20",
     lastActiveNote: "Threads @what.game.play 10/20 介紹",
     origin: null,
     threads: {
-      totalShares: 1115,
+      totalShares: 1264,
       checked: "2026-10-20",
       posts: [
         {
           account: "@what.game.play",
           url: "https://www.threads.com/@what.game.play/post/DerMoVyD07F",
           date: "10/20",
-          shares: 1000,
-          likes: 575,
-          views: "3.27 萬"
+          shares: 1100,
+          likes: 604,
+          views: "3.4 萬"
         },
         {
           account: "@what.game.play",
           url: "https://www.threads.com/@what.game.play/post/DerMx8Gk_0g",
           date: "10/20",
-          shares: 115,
-          likes: 14,
+          shares: 164,
+          likes: 23,
           views: "看不到"
         }
       ]
