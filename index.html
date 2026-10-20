@@ -165,6 +165,8 @@
           ${g.threads?.totalShares ? `<span class="chip tw">Threads 分享 ${fmt(g.threads.totalShares)}</span>` : ""}
           ${gain(g) != null ? `<span class="chip heat">近 ${span} 天 ${gain(g) > 0 ? "↑ +" + fmt(gain(g)) : "持平"}</span>` : ""}
           <span class="chip">${esc(g.genre)}</span>
+          ${g.lang ? `<span class="chip">${esc(g.lang)}</span>` : ""}
+          ${g.region ? `<span class="chip">${esc(g.region)}</span>` : ""}
           ${(g.ai || []).map(t => `<span class="chip">${esc(t)}</span>`).join("")}
           <span class="chip ${g.aiVerified ? "ok" : "warn"}">${g.aiVerified ? "AI 製作" : "AI 未證實"}</span>
         </div>
