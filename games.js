@@ -1,6 +1,7 @@
 // AI 遊戲收錄資料。定期收集排程會在這個陣列「新增」項目，不會刪除舊的。
 // 欄位：
 //   id        唯一代號（小寫英數與連字號）
+//   region    主要熱度地區（台灣以外才寫：香港、中國、星馬）
 //   lang      遊戲官方支援的中文：繁中／簡中／繁簡（沒有中文的遊戲不收）
 //   tier      main = 主榜（達到收錄門檻）；watch = 觀察中（有 AI 證據和一些熱度，還沒達門檻）
 //   missing   觀察中的遊戲還差什麼（例：Threads 分享合計 4,200，門檻 5,000）
@@ -596,5 +597,158 @@ window.GAMES = [
       posts: []
     },
     lang: "繁中"
+  },
+  {
+    id: "wuxia-survivors",
+    tier: "watch",
+    lang: "簡中",
+    name: "群俠傳：倖存者（群侠传：幸存者）",
+    aliases: [
+      "群俠傳：倖存者",
+      "群侠传：幸存者",
+      "群侠传幸存者",
+      "Wuxia Survivors",
+      "Nenly同学"
+    ],
+    url: "https://store.steampowered.com/app/4957110",
+    region: "中國",
+    desc: "武俠版倖存者類動作肉鴿，扮演江湖俠客割草升級，Steam 搶先體驗、免費。",
+    genre: "類倖存者",
+    ai: [
+      "AI 程式助手",
+      "AI 美術"
+    ],
+    aiVerified: true,
+    source: "https://store.steampowered.com/app/4957110",
+    hot: "中國 B 站 UP 主「Nenly同學」零經驗、一個人花三個月做出來，Steam 頁面揭露程式碼部分由 AI 工具協助撰寫，部分美術、動畫、音樂也用 AI 製作。8/11 上架後 Steam「壓倒性好評」，觸樂、遊民星空、17173 都有報導。",
+    missing: "沒有台灣或香港 Threads 貼文數據；熱度集中在 Steam 和 B 站（Steam 1,921 則評價 96% 好評，B 站開發影片 10 萬播放）",
+    added: "2026-10-20",
+    tw: true,
+    lastActive: "2026-10-20",
+    lastActiveNote: "Steam 近 30 天 666 則新評價（98% 好評）",
+    origin: {
+      platform: "Bilibili",
+      account: "Nenly同學（作者）",
+      url: "https://www.bilibili.com/video/BV1MPMd64EiD",
+      date: "2026-08-03",
+      stats: "10 萬播放・約 4,141 讚（子代理查到，未自行查看）"
+    },
+    threads: {
+      totalShares: 0,
+      checked: "2026-10-20",
+      posts: []
+    }
+  },
+  {
+    id: "yueyang-tower",
+    tier: "watch",
+    lang: "繁中",
+    name: "岳陽樓記・巴陵勝狀（3D 文言文遊戲）",
+    aliases: [
+      "岳陽樓記 3D",
+      "岳陽樓記 遊戲",
+      "巴陵勝狀",
+      "learnmer",
+      "始得西山宴遊記 3D"
+    ],
+    url: "https://yueyang.learnmer.com/",
+    region: "香港",
+    desc: "把 DSE 中文範文《岳陽樓記》做成洞庭湖 3D 場景，邊逛邊由 AI 小精靈帶你背書、教你答題。",
+    genre: "教育探索",
+    ai: [
+      "AI 小精靈"
+    ],
+    aiVerified: true,
+    source: "https://unwire.hk/2026/10/05/yueyang-tower-ai-game-dse/fun-tech/",
+    hot: "香港工程師 Michael Lee（Threads @ckmichael8，learnmer.com）作品。unwire：「網民用 AI 把《岳陽樓記》變成 3D 遊戲」，ezone 也有報導。之後又推出《始得西山宴遊記》3D 版。",
+    missing: "Threads 原帖約 9,800 分享是 unwire 截圖上的數字，原帖要登入才看得到、還沒自行確認；第 2 個帳號還沒找到 500 分享以上的貼文",
+    added: "2026-10-20",
+    tw: true,
+    lastActive: "2026-10-19",
+    lastActiveNote: "作者 10/19 在 Threads 發《始得西山宴遊記》3D 版",
+    origin: {
+      platform: "Threads",
+      account: "@ckmichael8（作者）",
+      url: "https://www.threads.com/@ckmichael8",
+      date: "2026-10-04 前後",
+      stats: "unwire 截圖：約 1.14 萬讚・564 轉發・9,800 分享（原帖需登入，未自行查看）"
+    },
+    threads: {
+      totalShares: 0,
+      checked: "2026-10-20",
+      posts: []
+    }
+  },
+  {
+    id: "chongzhen-zhipin",
+    tier: "watch",
+    lang: "簡中",
+    name: "崇禎直聘：明末官場沉浮模擬器",
+    aliases: [
+      "崇禎直聘",
+      "崇祯直聘",
+      "明末官场沉浮模拟器"
+    ],
+    url: "https://www.taptap.cn/app/837252",
+    region: "中國",
+    desc: "扮演崇禎年間的七品縣官，在國庫空虛、上司施壓、流寇四起之間求生的官場模擬。",
+    genre: "策略模擬",
+    ai: [
+      "AI 輔助文本與美術"
+    ],
+    aiVerified: true,
+    source: "https://www.taptap.cn/app/837252",
+    hot: "中國獨立開發者作品，TapTap 頁面寫明「部分文本在創作過程中使用了人工智能工具進行輔助潤色與表意優化，遊戲內立繪、音樂亦獲得了相關人工智能工具的技術輔助」。TapTap 9.6 分、4,662 則評價、約 48 萬關注，遊戲陀螺列為熱門前十。",
+    missing: "沒有台灣或香港 Threads 貼文數據；熱度集中在中國 TapTap",
+    added: "2026-10-20",
+    tw: true,
+    lastActive: "2026-09-11",
+    lastActiveNote: "遊戲陀螺 9/11 報導",
+    origin: null,
+    threads: {
+      totalShares: 0,
+      checked: "2026-10-20",
+      posts: []
+    }
+  },
+  {
+    id: "mongkok-story",
+    tier: "watch",
+    lang: "繁中",
+    name: "旺角揸Fit人（Mongkok Story）",
+    aliases: [
+      "旺角揸Fit人",
+      "旺角揸 fit 人",
+      "Mongkok Story",
+      "The Boss of Mong Kok",
+      "香港版 GTA"
+    ],
+    url: "https://mongkok-story.vercel.app",
+    region: "香港",
+    desc: "受臺北 GTA 啟發的香港版：以真實旺角街景為舞台、講背叛故事的瀏覽器開放世界動作遊戲（只支援電腦版 Chrome）。",
+    genre: "開放世界",
+    ai: [
+      "Meshy"
+    ],
+    aiVerified: true,
+    source: "https://unwire.hk/2026/10/07/mongkok-gta-browser-game-real-streets/fun-tech/",
+    hot: "香港創作者 morningwu.ai 作品。unwire：用真實相片「配合 Meshy 製作 3D 模型」（Meshy 是 AI 生成 3D 模型的工具），沒有相片的地方就生成近似外觀。",
+    missing: "Threads 原帖抓不到分享數；unwire 文章 818 讚",
+    added: "2026-10-20",
+    tw: true,
+    lastActive: "2026-10-07",
+    lastActiveNote: "unwire 10/07 報導",
+    origin: {
+      platform: "Threads",
+      account: "@morningwu.ai（作者）",
+      url: "https://www.threads.com/@morningwu.ai/post/DeJNX-wCfwC",
+      date: "2026-10 初",
+      stats: "抓不到數字"
+    },
+    threads: {
+      totalShares: 0,
+      checked: "2026-10-20",
+      posts: []
+    }
   }
 ];
